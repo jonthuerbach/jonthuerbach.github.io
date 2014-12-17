@@ -1,0 +1,72 @@
+a {
+	-webkit-transition: all .2s ease-in;
+	-moz-transition: all .2s ease-in;
+	-ms-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+}
+section.hero {
+	background: #000;
+}
+h1.hero-text {
+	font-family: Lato, sans-serif;
+	font-size: 5em;
+	font-weight: 300;
+	color: #fff;
+	padding-top: 3.5em;
+	text-align: center;
+}
+h1.hero-text span {
+	font-weight: 400;
+	color: #fff200;
+}
+.navbar-black {
+	/*background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 1.0)*/;
+}
+.navbar {
+	padding: 1em 0;
+	font-size: 1.3em;
+	text-transform: uppercase;
+}
+.navbar a {
+	color: #fff;
+}
+.navbar a:hover {
+	color: #fff200;
+}
+.nav>li>a {
+	padding: 15px 1em;
+}
+.nav>li>a:hover, .nav>li>a:focus {
+	background-color: transparent;
+}
+.btn-inverse {
+	background: none;
+	border-color: #fff;
+	font-size: 1em;
+	margin-left: ;
+}
+.btn-inverse:hover {
+	border-color: #fff200;
+}
+.btn-padding {
+	margin-left: 0.7em;
+}
+.bg1 {
+	background-image: url('../img/hero-image.jpg');
+	background-size: 100%;
+	background-attachment: fixed;
+	height: 700px;
+	width: 100%;
+}
+p.down-arrow {
+	text-align: center;
+}
+p.down-arrow a {
+	color: #fff;
+	font-size: 3em;
+}
+.bg2 {
+
+}

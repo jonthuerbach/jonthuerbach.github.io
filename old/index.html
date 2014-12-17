@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+	<title>Portfolio of Jonathan Thuerbach</title>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top" role="navigation" data-500="background: rgba(0, 0, 0, 0.0;" data-600="background: rgba(0, 0, 0, 1.0;">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Jon Thuerbach</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav pull-right">
+          <li><a href="#">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a class="btn btn-primary btn-inverse btn-padding" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+     </div>
+  </nav>
+	<section class="hero">
+		<div class="bg-container" data-0="opacity: 1.0;" data-500="opacity: 0.0;">
+			<div class="bg1" data-0="background-position: 50% 0px;" data-end="background-position: 50% -200px;">
+				<div class="container">
+					<div class="hero-text-container" data-sr="enter bottom and hustle 50px over 1s">
+						<h1 class="hero-text" data-0="opacity: 1.0;" data-200="opacity: 0.0;">Hey, my name is <span>Jon</span>.  I love creating <span>beautiful</span> and <span>usable</span> websites.</h1>
+					</div>
+					<div class="hero-button-container" data-sr="enter bottom and hustle 50px over 1s wait 1s">
+						<p class="down-arrow" data-0="opacity: 1.0;" data-200="opacity: 0.0;">
+							<a href="#bg2"><span class="glyphicon glyphicon-arrow-down"></span></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="bg2" id="bg2">
+		<h2>Next Section</h2>
+		<p>This is the next section</p>
+		<p>This is the next section</p>
+		<p>This is the next section</p>
+		<p>This is the next section</p>
+		<p>This is the next section</p>
+		<p>This is the next section</p>
+		<p>This is the next section</p>
+		<p>This is the next section</p>
+		<p>This is the next section</p>
+		<p>This is the next section</p>
+		<p>This is the next section</p>
+		<p>This is the next section</p>
+		<p>This is the next section</p>
+		<p>This is the next section</p>
+		<p>This is the next section</p>
+		<p>This is the next section</p>
+		<p>This is the next section</p>
+		<p>This is the next section</p>
+		<p>This is the next section</p>
+		<p>This is the next section</p>
+		<p>This is the next section</p>
+		<p>This is the next section</p>
+		<p>This is the next section</p>
+		<p>This is the next section</p>
+	</div>
+
+
+	<script src="./js/scrollReveal.min.js"></script>
+	<script src="./js/skrollr.min.js"></script>
+	<script type="text/javascript">
+    var s = skrollr.init();
+    $(window).load(function(){
+		    // console.log("Loaded");
+		    $(window).trigger('resize');
+		    s.refresh();
+		});
+  </script>
+  <script>
+	  window.sr = new scrollReveal();
+	</script>
+	<script>
+		$(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>
