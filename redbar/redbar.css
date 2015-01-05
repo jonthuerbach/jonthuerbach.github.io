@@ -24,6 +24,9 @@
 .redbar .navbar-header {
   min-height: 59px;
 }
+.redbar ul {
+  padding: 0;
+}
 .navbar-nav li:first-child {
   background: none;
 }
