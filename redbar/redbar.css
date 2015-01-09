@@ -126,7 +126,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  z-index: 500;
+  z-index: 1000;
   display: none;
   float: left;
   min-width: 160px;
@@ -255,7 +255,7 @@
   }
 }
 .ua-redbar-v1 .navbar-static-top {
-  z-index: 1000;
+  z-index: 500;
   border-width: 0 0 1px;
 }
 @media (min-width: 768px) {
