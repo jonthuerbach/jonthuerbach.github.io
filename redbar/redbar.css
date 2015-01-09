@@ -299,6 +299,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 20px;
+  font-size: 16px;
 }
 @media (max-width: 767px) {
   .ua-redbar-v1 .navbar-nav .open .dropdown-menu {
@@ -334,6 +335,7 @@
   .ua-redbar-v1 .navbar-nav > li > a {
     padding-top: 19px;
     padding-bottom: 20px;
+    /*font-size: 16px;*/
   }
 }
 .ua-redbar-v1 .navbar-nav > li > .dropdown-menu {
