@@ -49,12 +49,31 @@
     <div class="container">
 
       <div class="row">
-        <div class="col-md-6">
-          <h1 class="page-header">Tracks</h1>
-          <ul id="#soundcloud"></ul>
+        <div class="col-md-8">
+          <h1 class="page-header">Track Stats</h1>
+          
+          <div role="tabpanel">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#soundcloud" aria-controls="home" role="tab" data-toggle="tab">SoundCloud</a></li>
+              <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+              <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+              <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="soundcloud">
+                <ul id="#soundcloud"></ul>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="profile">...</div>
+              <div role="tabpanel" class="tab-pane" id="messages">...</div>
+              <div role="tabpanel" class="tab-pane" id="settings">...</div>
+            </div>
+          </div>
+
         </div>
-        <div class="col-md-6">
-          <h1 class="page-header">Social</h1>
+        <div class="col-md-4">
+          <h1 class="page-header">Social Stats</h1>
         </div>
       </div>
 

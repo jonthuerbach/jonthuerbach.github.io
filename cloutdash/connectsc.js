@@ -9,7 +9,7 @@ function connectSC() {
   // initiate auth popup
   SC.connect(function() {
     SC.get('/me', function(me) { 
-      alert('Hello, ' + me.username); 
+      alert('Hello, ' + me.username + '.  You have ' + me.followers_count + '!'); 
     });
   });
 }
