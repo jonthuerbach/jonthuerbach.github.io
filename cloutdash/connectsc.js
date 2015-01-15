@@ -9,7 +9,12 @@ function connectSC() {
   // initiate auth popup
   SC.connect(function() {
     SC.get('/me', function(me) { 
-      alert('Hello, ' + me.username + '.  You have ' + me.followers_count + '!'); 
+      alert('Hello, ' + me.username + '.  You have ' + me.followers_count + ' followers!'); 
+    });
+    SC.get('/tracks', { genres: 'booty' }, function(tracks) {
+      $(tracks).each(function(index, track)  {
+        $('#soundcloud').append($('<li></li>').html(track.title + ' - ' + track.genre));
+      });
     });
   });
 }
