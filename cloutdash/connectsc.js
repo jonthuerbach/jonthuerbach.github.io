@@ -13,7 +13,7 @@ function connectSC() {
     });
     SC.get('/tracks', { genres: 'booty' }, function(tracks) {
       $(tracks).each(function(index, track)  {
-        $('#soundcloud').append($('<li></li>').html(track.title + ' - ' + track.genre));
+        $('#soundcloud').append($('<tr><td></td></tr>').html(track.title + ' - ' + track.genre));
       });
     });
   });

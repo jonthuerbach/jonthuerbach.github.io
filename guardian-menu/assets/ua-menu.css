@@ -1,0 +1,32 @@
+body {
+	font-size: 14px;
+}
+#navbar {
+	text-align: center;
+	border-top: 2px solid #f2f1ec;
+	border-bottom: 2px solid #f2f1ec;
+}
+.nav>li>a:hover, .nav>li>a:focus {
+	background-color: transparent;
+}
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+	background-color: transparent;
+}
+.nav li a {
+	font-family: MiloWeb, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #395180;
+	display: block;
+	line-height: 2.5em;
+	font-size: 1rem;
+	padding: 0 0.625rem;
+	text-decoration: none;
+}
+.nav li a:hover {
+	color: #0c234b;
+}
+.nav>li>a {
+	padding: 0 2rem;
+	font-size: 1.15em;
+}
