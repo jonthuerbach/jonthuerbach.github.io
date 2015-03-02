@@ -10,10 +10,16 @@ $(document).ready(function(){
 	}
 	
 	// VERTICAL RESIZING FOR HERO AREA
+	resizeCenter();	
+
+	$(window).load(function(){
+	  resizeCenter();
+	});
+
 	$(window).resize(function(){
 	  resizeCenter();
 	});
-	$(function resizeCenter() {
+	function resizeCenter() {
     $('.hero-text').css({
         'position' : 'absolute',
         'left' : '50%',
@@ -24,7 +30,7 @@ $(document).ready(function(){
     $('.hero-container').css({
         'width' : $( window ).outerWidth()
     });
-	});
+	}
 
 	// BOOTSTRAP AFFIX
 	$('#main-nav').affix({

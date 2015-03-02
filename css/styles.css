@@ -16,8 +16,6 @@ a {
 	-o-transition: all .2s;
 	transition: all .2s;
 }
-section.hero-zone .hero-container: { width: 100%; }
-
 section.hero-zone { text-align: center; height: 100%; overflow: hidden; }
 section.hero-zone .hero-text { /*padding-top: 10em;*/ }
 section.hero-zone h1 { text-align: center; font-size: 1.3rem; font-weight: 400; text-transform: uppercase; color: #e97943; letter-spacing: 0.9rem; }
