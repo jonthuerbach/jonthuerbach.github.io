@@ -1,0 +1,55 @@
+body {
+	min-height: 3000px;
+	font-family: 'Roboto', sans-serif;
+}
+a {
+	-webkit-transition: all .2s ease-in;
+	-moz-transition: all .2s ease-in;
+	-ms-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+}
+.navbar { margin-bottom: 0; }
+.navbar-default { background-color: #fff; }
+.navbar-static-top { border-width: 0; }
+
+section.hero-zone { min-height: 550px; padding-top: 140px; text-align: center; }
+section.hero-zone h1 { text-align: center; font-size: 5em; font-weight: 300; color: #fff; }
+section.hero-zone h1 span { color: #00bff3; font-weight: 700; }
+section.hero-zone h2 { text-align: center; font-weight: 300; color: #fff; }
+section.hero-zone .btn-lg { padding: 16px 24px; font-size: 20px; line-height: 1.3333333; border-radius: 0; margin-top: 20px; }
+
+section.top-content {
+	background: #eee;
+	min-height: 500px;
+}
+.main-bg {
+	background: url('../img/main-bg.jpg') no-repeat 50% 30%;
+	position: fixed;
+	width: 100%;
+	z-index: -1;
+	min-height: 550px;
+	top: 0;
+	background-size: cover;
+}
+
+section.navigation .navbar-brand { padding: 25px 15px; font-weight: 700; }
+section.navigation .navbar-default .navbar-nav>li>a:focus, section.navigation .navbar-default .navbar-nav>li>a:hover { color: #BDAF13; }
+
+@media (min-width: 768px) {
+	.navbar-nav>li>a {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+}	
+
+.btn-outline-white {
+	color: #fff;
+	background-color: transparent;
+	border-color: #fff;
+	font-weight: 300;
+}
+.btn-outline-white:hover {
+	color: #BDAF13;
+	border-color: #BDAF13;
+}
