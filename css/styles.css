@@ -18,18 +18,23 @@ a {
 }
 section.hero-zone .hero-container: { width: 100%; }
 
-section.hero-zone { min-height: 550px; text-align: center; height: 100%; overflow: hidden; }
+section.hero-zone { text-align: center; height: 100%; overflow: hidden; }
 section.hero-zone .hero-text { /*padding-top: 10em;*/ }
 section.hero-zone h1 { text-align: center; font-size: 1.3rem; font-weight: 400; text-transform: uppercase; color: #e97943; letter-spacing: 0.9rem; }
 section.hero-zone h1 span { font-family: 'Tienne', serif; color: #fff; font-size: 4rem; font-weight: 900; text-transform: none; letter-spacing: 0.0rem; }
 section.hero-zone h2 { font-family: 'Tienne', serif; text-align: center; font-weight: 400; color: #fff; font-style: italic; margin-top: 0; font-size: 1.5rem;}
-section.hero-zone .btn-lg { padding: 16px 24px; font-size: 20px; line-height: 1.3333333; border-radius: 0; margin-top: 20px; }
+section.hero-zone .btn-lg { padding: 16px 24px; font-size: 2rem; line-height: 1.3333333; border-radius: 0; margin-top: 20px; }
 
 section.hero-zone .navbar { margin-bottom: 0; }
 section.hero-zone .navbar-default { background-color: transparent; }
+section.hero-zone .navbar-default.affix { background-color: #000; width: 100%; -webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	-ms-transition: all .2s;
+	-o-transition: all .2s;
+	transition: all .2s; }
 section.hero-zone .navbar-fixed-top, section.hero-zone .navbar-static-top { border-width: 0; }
 section.hero-zone .navbar-brand { padding: 25px 25px; font-weight: 700; color: #fff; display: none; }
-section.hero-zone .navbar-default .navbar-nav>li>a { color: #fff; }
+section.hero-zone .navbar-default .navbar-nav>li>a { color: #fff; text-transform: uppercase; }
 section.hero-zone .navbar-default .navbar-nav>li>a:focus, section.hero-zone .navbar-default .navbar-nav>li>a:hover { color: #BDAF13; }
 
 section.top-content {
