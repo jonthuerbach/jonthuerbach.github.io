@@ -57,8 +57,8 @@ a, button {
 }
 .page-title {
 	padding: 3em 0;
-	/*background: #ab0520;*/
-  background: url('../img/tri-bg.jpg');
+	background: #ab0520;
+  /*background: url('../img/tri-bg.jpg');*/
 	color: #fff;
 	margin-bottom: 2em;
 }
@@ -66,12 +66,12 @@ a, button {
 	font-size: 4rem;
 	margin: 0;
 	line-height: 1;
-	color: #0d214b;
+	color: #fff;
 }
 .page-title p {
 	font-size: 1.7rem;
   margin: 0;
-  color: #0d214b;
+  color: #fff;
 }
 h2.section-header {
 	border-bottom: 1px solid #eee;
@@ -80,6 +80,9 @@ h2.section-header {
   font-family: MiloSerifWeb, TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
   color: #49595E;
   text-transform: uppercase;
+}
+h2.section-header:first-child {
+  margin-top: 0.5em;
 }
 .example {
 	position: relative;

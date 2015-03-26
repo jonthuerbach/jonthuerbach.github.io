@@ -17,10 +17,6 @@
     <!-- Custom styles for this template -->
     <link href="css/styles.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="js/ie-emulation-modes-warning.js"></script>
-
     <!-- HighlightJS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/googlecode.min.css">
     <script src="js/highlight.pack.js"></script>
@@ -142,13 +138,13 @@
           <p>Use the following button classes to quickly create a styled button.</p>
           <div class="example">
             <h4 class="example-heading">Example</h4>
-            <button type="button" class="btn btn-default btn-red">Red</button>
-            <button type="button" class="btn btn-default btn-blue">Blue</button>
-            <button type="button" class="btn btn-default btn-cactus">Cactus</button>
-            <button type="button" class="btn btn-default btn-sky">Sky</button>
-            <button type="button" class="btn btn-default btn-river">River</button>
-            <button type="button" class="btn btn-default btn-sand">Sand</button>
-            <button type="button" class="btn btn-default btn-mesa">Mesa</button>
+            <button type="button" class="btn btn-red">Red</button>
+            <button type="button" class="btn btn-blue">Blue</button>
+            <button type="button" class="btn btn-cactus">Cactus</button>
+            <button type="button" class="btn btn-sky">Sky</button>
+            <button type="button" class="btn btn-river">River</button>
+            <button type="button" class="btn btn-sand">Sand</button>
+            <button type="button" class="btn btn-mesa">Mesa</button>
           </div>
 <pre>
 <code class="html">&lt;!-- Red button --&gt;
@@ -301,22 +297,11 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script>
-      $('#catstrap-sidebar').affix({
-        offset: {
-          top: 0
-        , bottom: function () {
-            return (this.bottom = $('.footer').outerHeight(true))
-          }
-        }
-      })
-    </script>
-    <script>$('body').scrollspy({ target: '#catstrap-sidebar' })</script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
