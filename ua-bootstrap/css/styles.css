@@ -102,6 +102,10 @@ h2.section-header:first-child {
 	font-size: 1.1em;
   font-weight: normal;
 }
+#catstrap-sidebar ul.nav li a:hover,
+#catstrap-sidebar ul.nav ul.nav li a:hover {
+  color: #0d6772;
+}
 #catstrap-sidebar ul.nav li.active a {
 	border-left: 2px solid #0d6772;
 	font-weight: bold;
