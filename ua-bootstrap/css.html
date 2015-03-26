@@ -129,6 +129,235 @@
 </code>
 </pre>
 </div><!-- /.highlight -->
+
+          <!-- INDIV SECTION -->
+          <h3 id="css-typography-inline-text-elements">Inline Text Elements</h3>
+          <h4>Marked Text</h4>
+          <p>For highlighting a run of text due to its relevance in another context, use the <code>&lt;mark&gt;</code> tag.</p>
+          <div class="example">
+            <h4 class="example-heading">Example</h4>
+            <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+          </div>
+<div class="highlight">
+<pre>
+<code class="html">&lt;p&gt;You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;</code>
+</pre>
+</div><!-- /.highlight -->
+          <p>&nbsp;</p>
+          <h4>Deleted Text</h4>
+          <p>For indicating blocks of text that have been deleted use the <code>&lt;del&gt;</code> tag.</p>
+          <div class="example">
+            <h4 class="example-heading">Example</h4>
+            <p><del>This line of text is meant to be treated as deleted text.</del></p>
+          </div>
+<div class="highlight">
+<pre>
+<code class="html">&lt;del&gt;This line of text is meant to be treated as deleted text.&lt;/del&gt;</code>
+</pre>
+</div><!-- /.highlight -->
+          <p>&nbsp;</p>
+          <h4>Strikethrough Text</h4>
+          <p>For indicating blocks of text that are no longer relevant use the <code>&lt;s&gt;</code> tag.</p>
+          <div class="example">
+            <h4 class="example-heading">Example</h4>
+            <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+          </div>
+<div class="highlight">
+<pre>
+<code class="html">&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;</code>
+</pre>
+</div><!-- /.highlight -->
+          <p>&nbsp;</p>
+          <h4>Inserted Text</h4>
+          <p>For indicating additions to the document use the <code>&lt;ins&gt;</code> tag.</p>
+          <div class="example">
+            <h4 class="example-heading">Example</h4>
+            <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+          </div>
+<div class="highlight">
+<pre>
+<code class="html">&lt;ins&gt;This line of text is meant to be treated as an addition to the document.&lt;/ins&gt;</code>
+</pre>
+</div><!-- /.highlight -->
+          <p>&nbsp;</p>
+          <h4>Underlined Text</h4>
+          <p>To underline text use the <code>&lt;u&gt;</code> tag.</p>
+          <div class="example">
+            <h4 class="example-heading">Example</h4>
+            <p><u>This line of text will render as underlined.</u></p>
+          </div>
+<div class="highlight">
+<pre>
+<code class="html">&lt;u&gt;This line of text will render as underlined.&lt;/u&gt;</code>
+</pre>
+</div><!-- /.highlight -->
+          <p>&nbsp;</p>
+          <h4>Small Text</h4>
+          <p>For de-emphasizing inline or blocks of text, use the <code>&lt;small&gt;</code> tag to set text at 85% the size of the parent. Heading elements receive their own <code>font-size</code> for nested <code>&lt;small&gt;</code> elements.</p>
+          <p>You may alternatively use an inline element with <code>.small</code> in place of any <code>&lt;small&gt;</code>.</p>
+          <div class="example">
+            <h4 class="example-heading">Example</h4>
+            <p><small>This line of text is meant to be treated as fine print.</small></p>
+          </div>
+<div class="highlight">
+<pre>
+<code class="html">&lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;</code>
+</pre>
+</div><!-- /.highlight -->
+          <p>&nbsp;</p>
+          <h4>Bold</h4>
+          <p>For emphasizing a snippet of text with a heavier font-weight.</p>
+          <div class="example">
+            <h4 class="example-heading">Example</h4>
+            <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
+          </div>
+<div class="highlight">
+<pre>
+<code class="html">&lt;strong&gt;rendered as bold text&lt;/strong&gt;</code>
+</pre>
+</div><!-- /.highlight -->
+          <p>&nbsp;</p>
+          <h4>Italics</h4>
+          <p>For emphasizing a snippet of text with italics.</p>
+          <div class="example">
+            <h4 class="example-heading">Example</h4>
+            <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+          </div>
+<div class="highlight">
+<pre>
+<code class="html">&lt;em&gt;rendered as italicized&lt;/em&gt;</code>
+</pre>
+</div><!-- /.highlight -->
+
+          <!-- END INDIV SECTION -->
+
+          <!-- INDIV SECTION -->
+          <h3 id="css-typography-alignment-classes">Alignment Classes</h3>
+          <p>Easily realign text to components with text alignment classes.</p>
+          <div class="example">
+            <h4 class="example-heading">Example</h4>
+              <p class="text-left">Left aligned text.</p>
+              <p class="text-center">Center aligned text.</p>
+              <p class="text-right">Right aligned text.</p>
+              <p class="text-justify">Justified text.</p>
+              <p class="text-nowrap">No wrap text.</p>
+          </div><!-- /.example -->
+<div class="highlight">
+<pre>
+<code class="html">&lt;p class="text-left"&gt;Left aligned text.&lt;/p&gt;
+&lt;p class="text-center"&gt;Center aligned text.&lt;/p&gt;
+&lt;p class="text-right"&gt;Right aligned text.&lt;/p&gt;
+&lt;p class="text-justify"&gt;Justified text.&lt;/p&gt;
+&lt;p class="text-nowrap"&gt;No wrap text.&lt;/p&gt;</code>
+</pre>
+</div><!-- /.highlight -->
+          <!-- END INDIV SECTION -->
+
+          <!-- INDIV SECTION -->
+          <h3 id="css-typography-transformation-classes">Transformation Classes</h3>
+          <p>Transform text in components with text capitalization classes.</p>
+          <div class="example">
+            <h4 class="example-heading">Example</h4>
+              <p class="text-lowercase">Lowercased text.</p>
+              <p class="text-uppercase">Uppercased text.</p>
+              <p class="text-capitalize">Capitalized text.</p>
+          </div><!-- /.example -->
+<div class="highlight">
+<pre>
+<code class="html">&lt;p class="text-lowercase"&gt;Lowercased text.&lt;/p&gt;
+&lt;p class="text-uppercase"&gt;Uppercased text.&lt;/p&gt;
+&lt;p class="text-capitalize"&gt;Capitalized text.&lt;/p&gt;</code>
+</pre>
+</div><!-- /.highlight -->
+          <!-- END INDIV SECTION -->
+
+          <!-- INDIV SECTION -->
+          <h3 id="css-typography-lists">Lists</h3>
+          <h4>Unordered</h4>
+          <p>A list of items in which the order does <em>not</em> explicitly matter.</p>
+          <div class="example">
+            <h4 class="example-heading">Example</h4>
+              <ul>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Nulla volutpat aliquam velit
+                  <ul>
+                    <li>Phasellus iaculis neque</li>
+                    <li>Purus sodales ultricies</li>
+                    <li>Vestibulum laoreet porttitor sem</li>
+                    <li>Ac tristique libero volutpat at</li>
+                  </ul>
+                </li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+                <li>Eget porttitor lorem</li>
+              </ul>
+          </div><!-- /.example -->
+<div class="highlight">
+<pre>
+<code class="html">&lt;ul&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;</code>
+</pre>
+</div><!-- /.highlight -->
+          <p>&nbsp;</p>
+          <h4>Triangle</h4>
+          <p>Same as unordered list but uses blue triangles as bullets.</p>
+          <div class="example">
+            <h4 class="example-heading">Example</h4>
+              <ul class="triangle">
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Nulla volutpat aliquam velit
+                  <ul>
+                    <li>Phasellus iaculis neque</li>
+                    <li>Purus sodales ultricies</li>
+                    <li>Vestibulum laoreet porttitor sem</li>
+                    <li>Ac tristique libero volutpat at</li>
+                  </ul>
+                </li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+                <li>Eget porttitor lorem</li>
+              </ul>
+          </div><!-- /.example -->
+<div class="highlight">
+<pre>
+<code class="html">&lt;ul class="triangle"&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;</code>
+</pre>
+</div><!-- /.highlight -->
+          <p>&nbsp;</p>
+          <h4>Ordered</h4>
+          <p>A list of items in which the order <em>does</em> explicitly matter.</p>
+          <div class="example">
+            <h4 class="example-heading">Example</h4>
+              <ol>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Nulla volutpat aliquam velit</li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+                <li>Eget porttitor lorem</li>
+              </ol>
+          </div><!-- /.example -->
+<div class="highlight">
+<pre>
+<code class="html">&lt;ol&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;</code>
+</pre>
+</div><!-- /.highlight -->
+
+          <!-- END INDIV SECTION -->
+
           <!-- END SECTION -->
 
 
@@ -297,6 +526,10 @@
                     <li><a href="#css-typography-headings">Headings</a></li>
                     <li><a href="#css-typography-body-copy">Body Copy</a></li>
                     <li><a href="#css-typography-lead-body-copy">Lead Body Copy</a></li>
+                    <li><a href="#css-typography-inline-text-elements">Inline Text Elements</a></li>
+                    <li><a href="#css-typography-alignment-classes">Alignment Classes</a></li>
+                    <li><a href="#css-typography-transformation-classes">Transformation Classes</a></li>
+                    <li><a href="#css-typography-lists">Lists</a></li>
                   </ul>
                 </li>
                 <li><a href="#css-buttons">Buttons</a>
