@@ -8,6 +8,7 @@ body {
 	font-family: 'Roboto', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 	width: 100%;
 	height: 100%;
+	position: relative;
 }
 a {
 	-webkit-transition: all .2s;
@@ -17,6 +18,7 @@ a {
 	transition: all .2s;
 }
 h1, h2 { font-family: 'Roboto', 'Helvetica Neue', Arial, Helvetica, sans-serif; }
+h1 { font-size: 5rem; }
 /*PRELOAD*/
 #loading { width: 100%; height: 100%; top: 0px; left: 0px; position: fixed; display: block; opacity: 1; background-color: #000; z-index: 9999; text-align: center; transition: all 0.5s; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; }
 #loading-image { position: absolute; top: 50%; left: 50%; z-index: 100; margin-left: -27px; margin-top: -27px; }
@@ -27,10 +29,11 @@ h1, h2 { font-family: 'Roboto', 'Helvetica Neue', Arial, Helvetica, sans-serif; 
 /*HERO ZONE*/
 section.hero-zone { text-align: center; height: 100%; overflow: hidden; }
 section.hero-zone .hero-text { /*padding-top: 10em;*/ }
-section.hero-zone h1 { text-align: center; font-size: 1.3rem; font-weight: 400; text-transform: uppercase; color: #e97943; letter-spacing: 0.9rem; }
+section.hero-zone h1 { font-family: 'Roboto', 'Helvetica Neue', Arial, Helvetica, sans-serif; text-align: center; font-size: 1.3rem; font-weight: 400; text-transform: uppercase; color: #e97943; letter-spacing: 0.9rem; }
 section.hero-zone h1 span { font-family: 'Tienne', 'Times New Roman', Georgia, serif; color: #fff; font-size: 4rem; font-weight: 900; text-transform: none; letter-spacing: 0.0rem; }
 section.hero-zone h2 { font-family: 'Tienne', 'Times New Roman', Georgia, serif; text-align: center; font-weight: 400; color: #fff; font-style: italic; margin-top: 0; font-size: 1.5rem;}
-section.hero-zone .btn-lg { padding: 16px 24px; font-size: 2rem; line-height: 1.3333333; border-radius: 0; margin-top: 20px; }
+section.hero-zone .btn-lg { padding: 2rem 2.4rem; font-size: 2rem; line-height: 1.3333333; border-radius: 4rem; margin-top: 20px;  }
+section.hero-zone .btn.focus, .btn:focus, .btn:hover { color: #e97943; outline: none; border-color: #e97943; }
 
 /* NAVIGATION */
 section.hero-zone .navbar { margin-bottom: 0; }
@@ -41,13 +44,21 @@ section.hero-zone .navbar-brand { font-family: 'Tienne', 'Times New Roman', Geor
 section.hero-zone .affix .navbar-brand { display: block; }
 section.hero-zone .navbar-default .navbar-nav>li>a { color: #fff; text-transform: uppercase; font-size: 1.7rem; }
 section.hero-zone .navbar-default .navbar-nav>li>a:focus, section.hero-zone .navbar-default .navbar-nav>li>a:hover { color: #e97943; }
+section.hero-zone .navbar-default .navbar-brand:focus, section.hero-zone .navbar-default .navbar-brand:hover { color: #e97943; }
 section.hero-zone .nav>li>a { padding: 3rem 2rem; }
+section.hero-zone .navbar-default .navbar-toggle { border-color: #fff; }
+section.hero-zone .navbar-default .navbar-toggle .icon-bar { background-color: #fff; }
+section.hero-zone .navbar-default .navbar-toggle:focus, section.hero-zone .navbar-default .navbar-toggle:hover { background-color: transparent; border-color: #e97943; }
+section.hero-zone .navbar-default .navbar-toggle:focus span, section.hero-zone .navbar-default .navbar-toggle:hover span { background-color: #e97943; }
+section.hero-zone .navbar-toggle { margin-top: 2.2rem; }
+section.hero-zone .navbar-collapse.in, section.hero-zone .navbar-collapse.collapsing { background-color: #000; background-color: rgba(0, 0, 0, 0.9); }
+section.hero-zone .navbar-default .navbar-nav>.active>a, section.hero-zone .navbar-default .navbar-nav>.active>a:focus, section.hero-zone .navbar-default .navbar-nav>.active>a:hover { background: #333; }
 
 
-section.top-content {
-	background: #fff;
-	min-height: 500px;
-}
+section.front-work { background: #fff; min-height: 1000px; }
+section.front-work h1 { padding-top: ; }
+section.front-work img { width: 100%; height: auto; }
+
 .main-bg {
 	background: url('../img/main-bg.jpg') no-repeat 50% 30%;
 	position: fixed;
@@ -86,13 +97,5 @@ section.top-content {
 
 }
 
-.btn-outline-white {
-	color: #fff;
-	background-color: transparent;
-	border-color: #fff;
-	font-weight: 300;
-}
-.btn-outline-white:hover {
-	color: #BDAF13;
-	border-color: #BDAF13;
-}
+.btn-outline-white { color: #fff; background-color: transparent; border-color: #fff; font-weight: 300; }
+.btn-outline-white:hover { color: #e97943; border-color: #e97943; }
