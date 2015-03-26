@@ -1084,6 +1084,9 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%;
 }
+.btn-arrow:after {
+  content: " »";
+}
 .fade {
   opacity: 0;
   -webkit-transition: opacity .15s linear;
