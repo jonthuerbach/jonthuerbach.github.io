@@ -201,7 +201,11 @@ h1,
 }
 h2,
 .h2 {
-  font-size: 30px;
+  font-size: 36px;
+  font-size: 2.25rem;
+  font-family: MiloSerifWeb, TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+  /*text-transform: uppercase;*/
+  color: #49595E;
 }
 h3,
 .h3 {
@@ -213,21 +217,25 @@ h3,
 }
 h4,
 .h4 {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 h5,
 .h5 {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 700;
 }
 h6,
 .h6 {
   font-size: 12px;
   font-size: 0.75rem;
+  font-weight: 700;
 }
 p {
-  margin: 0 0 1em;
+  margin: 0 0 16px;
+  margin: 0 0 1rem;
 }
 .lead {
   margin-bottom: 20px;

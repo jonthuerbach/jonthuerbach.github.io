@@ -57,24 +57,26 @@ a, button {
 }
 .page-title {
 	padding: 3em 0;
-	background: #ab0520;
+	/*background: #ab0520;*/
+  background: url('../img/tri-bg.jpg');
 	color: #fff;
 	margin-bottom: 2em;
 }
 .page-title h1 {
-	font-size: 5rem;
+	font-size: 4rem;
 	margin: 0;
 	line-height: 1;
-	color: #fff;
+	color: #0d214b;
 }
 .page-title p {
-	font-size: 1.8rem;
+	font-size: 1.7rem;
   margin: 0;
+  color: #0d214b;
 }
 h2.section-header {
 	border-bottom: 1px solid #eee;
 	padding-bottom: 0.1em;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: MiloSerifWeb, TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
   color: #49595E;
   text-transform: uppercase;
@@ -95,11 +97,12 @@ h2.section-header {
 #catstrap-sidebar ul.nav li a {
 	color: #999;
 	font-size: 1.1em;
+  font-weight: normal;
 }
 #catstrap-sidebar ul.nav li.active a {
-	border-left: 2px solid #ab0520;
+	border-left: 2px solid #0d6772;
 	font-weight: bold;
-	color: #ab0520;
+	color: #0d6772;
 }
 #catstrap-sidebar ul.nav ul.nav li a {
 	border-left: 0;
@@ -109,9 +112,9 @@ h2.section-header {
 	font-size: 0.9em;
 }
 #catstrap-sidebar ul.nav ul.nav li.active a {
-	border-left: 2px solid #ab0520;
+	border-left: 2px solid #0d6772;
 	font-weight: bold;
-	color: #ab0520;
+	color: #0d6772;
 }
 #catstrap-sidebar li ul.nav {
 	display: none;
@@ -119,7 +122,11 @@ h2.section-header {
 #catstrap-sidebar li.active ul.nav {
 	display: block;
 }
-
+h4.example-heading {
+  color: #bbb;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 @media (min-width: 768px) {
   .navbar-right .dropdown-menu {
     right: 0;
@@ -147,7 +154,7 @@ h2.section-header {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eee;
+  background-color: #dbe8ea;
 }
 .nav > li.disabled > a {
   color: #777;
@@ -430,8 +437,8 @@ h2.section-header {
 .navbar-brand {
   float: left;
   height: 50px;
-  padding: 15px 15px;
-  font-size: 18px;
+  padding: 25px 25px;
+  font-size: 22px;
   line-height: 20px;
 }
 .navbar-brand:hover,
@@ -513,8 +520,9 @@ h2.section-header {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 18px;
   }
   .navbar-nav.navbar-right:last-child {
     margin-right: -15px;

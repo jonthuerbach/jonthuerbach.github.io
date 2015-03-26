@@ -16,14 +16,13 @@
 
     <!-- Custom styles for this template -->
     <link href="css/styles.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script>
 
     <!-- HighlightJS -->
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/monokai_sublime.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/googlecode.min.css">
     <script src="js/highlight.pack.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -83,12 +82,66 @@
           <p>To ensure proper rendering and touch zooming, add the viewport meta tag to your <code>&lt;head&gt;</code></p>
 <pre>
 <code class="html">&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code>
-</pre>         
+</pre>
+
+
+
+          <!-- SECTION -->
+          <h2 class="section-header" id="css-typography">Typography</h2>
+          <h3 id="css-typography-headings">Headings</h3>
+          <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available. <code>.h1</code> through <code>.h6</code> classes are also available, for when you want to match the font styling of a heading but still want your text to be displayed inline.</p>
+          <div class="example">
+            <h4 class="example-heading">Example</h4>
+            <h1>h1. UA Bootstrap Heading 1</h1><hr />
+            <h2>h2. UA Bootstrap Heading 2</h2><hr />
+            <h3>h3. UA Bootstrap Heading 3</h3><hr />
+            <h4>h4. UA Bootstrap Heading 4</h4><hr />
+            <h5>h5. UA Bootstrap Heading 5</h5><hr />
+            <h6>h6. UA Bootstrap Heading 6</h6>
+          </div>
+<pre>
+<code class="html">&lt;h1&gt;h1. UA Bootstrap Heading 1&lt;/h1&gt;
+&lt;h2&gt;h2. UA Bootstrap Heading 2&lt;/h2&gt;
+&lt;h3&gt;h3. UA Bootstrap Heading 3&lt;/h3&gt;
+&lt;h4&gt;h4. UA Bootstrap Heading 4&lt;/h4&gt;
+&lt;h5&gt;h5. UA Bootstrap Heading 5&lt;/h5&gt;
+&lt;h6&gt;h6. UA Bootstrap Heading 6&lt;/h6&gt;</code>
+</pre>
+          <h3 id="css-typography-body-copy">Body Copy</h3>
+          <p>UA Bootstrap's global default <code>font-size</code> is <strong>16px</strong>, with a <code>line-height</code> of <strong>1.5</strong>. This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of 16px by default.</p>
+          <div class="example">
+            <h4 class="example-heading">Example</h4>
+              <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+              <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+          </div><!-- /.example -->
+<div class="highlight">
+<pre>
+<code class="html">&lt;p&gt;...&lt;/p&gt;</code>
+</pre>
+</div><!-- /.highlight -->
+
+          <h3 id="css-typography-lead-body-copy">Lead Body Copy</h3>
+          <p>Make a paragraph stand out by adding <code>.lead</code>.</p>
+          <div class="example">
+            <h4 class="example-heading">Example</h4>
+            <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+          </div>
+<div class="highlight">
+<pre>
+<code class="html">&lt;p class="lead"&gt;...&lt;/p&gt;
+</code>
+</pre>
+</div><!-- /.highlight -->
+          <!-- END SECTION -->
+
+
+          <!-- SECTION -->
           <h2 class="section-header" id="css-buttons">Buttons</h2>
           <h3 id="css-buttons-options">Options</h3>
           <p>Use the following button classes to quickly create a styled button.</p>
           <div class="example">
-            <h4>Example</h4>
+            <h4 class="example-heading">Example</h4>
             <button type="button" class="btn btn-default btn-red">Red</button>
             <button type="button" class="btn btn-default btn-blue">Blue</button>
             <button type="button" class="btn btn-default btn-cactus">Cactus</button>
@@ -125,7 +178,7 @@
           <h3 id="css-buttons-sizes">Sizes</h3>
           <p>The button sizes are large, default, small, and extra small.</p>
           <div class="example">
-            <h4>Example</h4>
+            <h4 class="example-heading">Example</h4>
               <p>
                 <button type="button" class="btn btn-red btn-lg">Large Button</button>
                 <button type="button" class="btn btn-blue btn-lg">Large Button</button>
@@ -167,7 +220,7 @@
           <h3 id="css-buttons-anchor-buttons">Anchor Buttons</h3>
           <p>You can use the same classes for anchor buttons.</p>
           <div class="example">
-            <h4>Example</h4>
+            <h4 class="example-heading">Example</h4>
             <p>
               <a href="#" class="btn btn-red btn-lg">Large Button</a>
               <a href="#" class="btn btn-blue btn-lg">Large Button</a>
@@ -205,128 +258,7 @@
 </code>
 </pre>
 </div><!-- /.highlight -->
-
-<h2 class="section-header" id="css-buttons">Buttons</h2>
-          <h3 id="css-buttons-options">Options</h3>
-          <p>Use the following button classes to quickly create a styled button.</p>
-          <div class="example">
-            <h4>Example</h4>
-            <button type="button" class="btn btn-default btn-red">Red</button>
-            <button type="button" class="btn btn-default btn-blue">Blue</button>
-            <button type="button" class="btn btn-default btn-cactus">Cactus</button>
-            <button type="button" class="btn btn-default btn-sky">Sky</button>
-            <button type="button" class="btn btn-default btn-river">River</button>
-            <button type="button" class="btn btn-default btn-sand">Sand</button>
-            <button type="button" class="btn btn-default btn-mesa">Mesa</button>
-          </div>
-<pre>
-<code class="html">&lt;!-- Red button --&gt;
-&lt;button type="button" class="btn btn-red"&gt;Red&lt;/button&gt;
-
-&lt;!-- Blue button --&gt;
-&lt;button type="button" class="btn btn-blue"&gt;Blue&lt;/button&gt;
-
-&lt;!-- Cactus button --&gt;
-&lt;button type="button" class="btn btn-cactus"&gt;Cactus&lt;/button&gt;
-
-&lt;!-- Sky button --&gt;
-&lt;button type="button" class="btn btn-sky"&gt;Sky&lt;/button&gt;
-
-&lt;!-- River button --&gt;
-&lt;button type="button" class="btn btn-river"&gt;River&lt;/button&gt;
-
-&lt;!-- Sand button --&gt;
-&lt;button type="button" class="btn btn-sand"&gt;Sand&lt;/button&gt;
-
-&lt;!-- Mesa button --&gt;
-&lt;button type="button" class="btn btn-mesa"&gt;Mesa&lt;/button&gt;
-
-&lt;!-- Brick button --&gt;
-&lt;button type="button" class="btn btn-brick"&gt;Brick&lt;/button&gt;</code>
-</pre>
-          <h3 id="css-buttons-sizes">Sizes</h3>
-          <p>The button sizes are large, default, small, and extra small.</p>
-          <div class="example">
-            <h4>Example</h4>
-              <p>
-                <button type="button" class="btn btn-red btn-lg">Large Button</button>
-                <button type="button" class="btn btn-blue btn-lg">Large Button</button>
-              </p>
-              <p>
-                <button type="button" class="btn btn-red">Default Button</button>
-                <button type="button" class="btn btn-blue">Default Button</button>
-              </p>
-              <p>
-                <button type="button" class="btn btn-red btn-sm">Small Button</button>
-                <button type="button" class="btn btn-blue btn-sm">Small Button</button>
-              </p>
-              <p>
-                <button type="button" class="btn btn-red btn-xs">Extra Small Button</button>
-                <button type="button" class="btn btn-blue btn-xs">Extra Small Button</button>
-              </p>
-          </div><!-- /.example -->
-<div class="highlight">
-<pre>
-<code class="html">&lt;!-- Large buttons --&gt;
-&lt;button type="button" class="btn btn-red btn-lg"&gt;Large Button&lt;/button&gt;
-&lt;button type="button" class="btn btn-blue btn-lg"&gt;Large Button&lt;/button&gt;
-
-&lt;!-- Default buttons --&gt;
-&lt;button type="button" class="btn btn-red"&gt;Default Button&lt;/button&gt;
-&lt;button type="button" class="btn btn-blue"&gt;Default Button&lt;/button&gt;
-
-&lt;!-- Small buttons --&gt;
-&lt;button type="button" class="btn btn-red btn-sm"&gt;Small Button&lt;/button&gt;
-&lt;button type="button" class="btn btn-blue btn-sm"&gt;Small Button&lt;/button&gt;
-
-&lt;!-- Extra Small buttons --&gt;
-&lt;button type="button" class="btn btn-red btn-xs"&gt;Extra Small Button&lt;/button&gt;
-&lt;button type="button" class="btn btn-blue btn-xs"&gt;Extra Small Button&lt;/button&gt;
-</code>
-</pre>
-</div><!-- /.highlight -->
-
-          <h3 id="css-buttons-anchor-buttons">Anchor Buttons</h3>
-          <p>You can use the same classes for anchor buttons.</p>
-          <div class="example">
-            <h4>Example</h4>
-            <p>
-              <a href="#" class="btn btn-red btn-lg">Large Button</a>
-              <a href="#" class="btn btn-blue btn-lg">Large Button</a>
-            </p>
-            <p>
-              <a href="#" class="btn btn-red">Default Button</a>
-              <a href="#" class="btn btn-blue">Default Button</a>
-            </p>
-            <p>
-              <a href="#" class="btn btn-red btn-sm">Small Button</a>
-              <a href="#" class="btn btn-blue btn-sm">Small Button</a>
-            </p>
-            <p>
-              <a href="#" class="btn btn-red btn-xs">Extra Small Button</a>
-              <a href="#" class="btn btn-blue btn-xs">Extra Small Button</a>
-            </p>
-          </div>
-<div class="highlight">
-<pre>
-<code class="html">&lt;!-- Large buttons --&gt;
-&lt;a href="#" class="btn btn-red btn-lg"&gt;Large Button&lt;/a&gt;
-&lt;a href="#" class="btn btn-blue btn-lg"&gt;Large Button&lt;/a&gt;
-
-&lt;!-- Default buttons --&gt;
-&lt;a href="#" class="btn btn-red"&gt;Default Button&lt;/a&gt;
-&lt;a href="#" class="btn btn-blue"&gt;Default Button&lt;/a&gt;
-
-&lt;!-- Small buttons --&gt;
-&lt;a href="#" class="btn btn-red btn-sm"&gt;Small Button&lt;/a&gt;
-&lt;a href="#" class="btn btn-blue btn-sm"&gt;Small Button&lt;/a&gt;
-
-&lt;!-- Extra Small buttons --&gt;
-&lt;a href="#" class="btn btn-red btn-xs"&gt;Extra Small Button&lt;/a&gt;
-&lt;a href="#" class="btn btn-blue btn-xs"&gt;Extra Small Button&lt;/a&gt;
-</code>
-</pre>
-</div><!-- /.highlight -->
+          <!-- END SECTION -->
 
 
 
@@ -337,12 +269,19 @@
 
           </div><!-- /.col-md-9 -->
           <div class="col-md-3">
-            <div id="catstrap-sidebar" data-spy="affix" data-offset-top="308">
+            <div id="catstrap-sidebar" data-spy="affix" data-offset-top="283">
               <ul class="nav">
                 <li><a href="#css-overview">Overview/Getting Started</a>
                   <ul class="nav">
                     <li><a href="#css-overview-html5-doctype">HTML5 Doctype</a></li>
                     <li><a href="#css-overview-mobile-first">Mobile First</a></li>
+                  </ul>
+                </li>
+                <li><a href="#css-typography">Typography</a>
+                  <ul class="nav">
+                    <li><a href="#css-typography-headings">Headings</a></li>
+                    <li><a href="#css-typography-body-copy">Body Copy</a></li>
+                    <li><a href="#css-typography-lead-body-copy">Lead Body Copy</a></li>
                   </ul>
                 </li>
                 <li><a href="#css-buttons">Buttons</a>
