@@ -1,5 +1,5 @@
 body.download-page {
-	background: #ab0520;
+	background: #ab0520 url('../img/tri-fade-right.png')100% 0% repeat-y;
 }
 h3 {
 	padding-top: 10px;
@@ -22,7 +22,7 @@ a, button {
 	font-size: 20px;
 }
 .download-area {
-	background: #ab0520;
+	/*background: #ab0520;*/
 	color: #fff;
 	padding: 80px 0;
 	text-align: center;
@@ -57,7 +57,7 @@ a, button {
 }
 .page-title {
 	padding: 3em 0;
-	background: #ab0520;
+	background: #ab0520 url('../img/tri-fade-right.png')100% 0% no-repeat;
   /*background: url('../img/tri-bg.jpg');*/
 	color: #fff;
 	margin-bottom: 2em;
