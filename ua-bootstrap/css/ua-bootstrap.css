@@ -387,8 +387,8 @@ table > thead > tr > th {
   vertical-align: bottom;
   background: #49595e;
   color: #fff;
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 20px;
+  font-size: 1.3rem;
   text-transform: uppercase;
   padding-left: 12px;
   line-height: 1;
@@ -415,13 +415,7 @@ table > tbody + tbody {
 table table {
   background-color: #fff;
 }
-table > tbody > tr {
-  background-color: blue;
-}
-table > tbody > tr:hover {
-  background-color: #546581 !important;
-}
-table > tbody > tr:nth-of-type(odd) > td {
+table > tbody > tr:nth-of-type(odd) > td, table > tbody > tr:nth-of-type(odd) > th {
   background-color: #EEF1F1;
 }
 table col[class*="col-"] {
@@ -434,6 +428,11 @@ table th[class*="col-"] {
   position: static;
   display: table-cell;
   float: none;
+}
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background-color: #546581;
+  color: #fff;
 }
 .table-responsive {
   min-height: .01%;
