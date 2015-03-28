@@ -285,6 +285,12 @@ mark,
 .text-capitalize {
   text-transform: capitalize;
 }
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #ab0520;
+  background-color: #f9f2f4;
+}
 ul,
 ol {
   margin-top: 0;
@@ -438,6 +444,7 @@ table th[class*="col-"] {
   min-height: .01%;
   overflow-x: auto;
 }
+.32
 @media screen and (max-width: 767px) {
   .table-responsive {
     width: 100%;

@@ -497,6 +497,72 @@
 </div>
 
           <!-- END TABLES SECTION -->
+
+          <!-- FORMS SECTION -->
+          <h2 class="section-header" id="css-forms">Forms</h2>
+          <h3 id="css-forms-basic-example">Basic Example</h3>
+          <p>Individual form controls automatically receive some global styling. All textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with <code>.form-control</code> are set to <code>width: 50%;</code> by default. Wrap labels and controls in <code>.form-group</code> for optimum spacing.</p>
+          <div class="example">
+            <h4 class="example-heading">Example</h4>
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" id="exampleInputFile">
+                <p class="help-block">Example block-level help text here.</p>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Check me out
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio"> Radio
+                </label>
+              </div>
+              <button type="submit" class="btn btn-red">Submit</button>
+            </form>
+          </div>
+<div class="highlight">
+<pre>
+<code class="html">&lt;form&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
+    &lt;input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="exampleInputPassword1"&gt;Password&lt;/label&gt;
+    &lt;input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="exampleInputFile"&gt;File input&lt;/label&gt;
+    &lt;input type="file" id="exampleInputFile"&gt;
+    &lt;p class="help-block"&gt;Example block-level help text here.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="checkbox"&gt;
+    &lt;label&gt;
+      &lt;input type="checkbox"&gt; Check me out
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="radio"&gt;
+    &lt;label&gt;
+      &lt;input type="radio"&gt; Radio
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;button type="submit" class="btn btn-red"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code>
+</pre>
+</div>
+
+          <!-- END FORMS SECTION -->
           
           <!-- BUTTONS SECTION -->
           <h2 class="section-header" id="css-buttons">Buttons</h2>
@@ -674,6 +740,11 @@
                     <li><a href="#css-tables-basic">Basic</a></li>
                     <li><a href="#css-tables-hover">Hover Rows</a></li>
                     <li><a href="#css-tables-responsive">Responsive Tables</a></li>
+                  </ul>
+                </li>
+                <li><a href="#css-forms">Forms</a>
+                  <ul class="nav">
+                    <li><a href="#css-forms-basic-example">Basic Example</a></li>
                   </ul>
                 </li>
                 <li><a href="#css-buttons">Buttons</a>
