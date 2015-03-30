@@ -37,6 +37,8 @@ a, button {
 }
 .download-area .btn {
 	font-size: 30px;
+  padding: 16px 32px;
+  padding: 1rem 2rem;
 }
 .navbar-nav > .active > a, 
 .navbar-nav > .active > a:hover, 
@@ -108,19 +110,19 @@ h2.section-header:first-child {
   color: #0d6772;
 }
 #catstrap-sidebar ul.nav li.active a {
-	border-left: 2px solid #0d6772;
+	border-left: 3px solid #0d6772;
 	font-weight: bold;
 	color: #0d6772;
 }
 #catstrap-sidebar ul.nav ul.nav li a {
-	border-left: 0;
+	border-left: 1px solid #0d6772;
 	font-weight: normal;
 	color: #999;
 	padding: 0.3em 0.5em 0.3em 2.5em;
 	font-size: 0.9em;
 }
 #catstrap-sidebar ul.nav ul.nav li.active a {
-	border-left: 2px solid #0d6772;
+	border-left: 3px solid #0d6772;
 	font-weight: bold;
 	color: #0d6772;
 }
@@ -171,6 +173,10 @@ h4.example-heading {
 .nav > li > a:focus {
   text-decoration: none;
   background-color: #dbe8ea;
+}
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+  background: #fff;
+  color: #7B89AE;
 }
 .nav > li.disabled > a {
   color: #777;
@@ -460,6 +466,7 @@ h4.example-heading {
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;
+  color: #7B89AE;
 }
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
