@@ -4,12 +4,6 @@ body.download-page {
 h3 {
 	padding-top: 10px;
 }
-a, button {
-	-webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-	transition: all 0.1s ease-in-out;
-}
 .navbar {
 	margin-bottom: 0;
 }
@@ -37,8 +31,8 @@ a, button {
 }
 .download-area .btn {
 	font-size: 30px;
-  padding: 16px 32px;
-  padding: 1rem 2rem;
+  padding: 24px 40px;
+  padding: 1.5rem 2.5rem;
 }
 .navbar-nav > .active > a, 
 .navbar-nav > .active > a:hover, 
@@ -1554,5 +1548,21 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   }
   .col-lg-offset-0 {
     margin-left: 0;
+  }
+}
+#content_featured {
+  margin-bottom: 24px;
+  margin-bottom: 2rem;
+}
+#content_featured .interior-featured-bg {
+  clear: both;
+  height: 180px;
+  width: 100%;
+  background: url('../img/interior-bg.jpg') no-repeat 50% 90%;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  #content_featured .interior-featured-bg {
+    height: 250px;
   }
 }
