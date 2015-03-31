@@ -1743,6 +1743,9 @@ a.label:focus {
   font-family: MiloWeb-Text, sans-serif;
   font-weight: normal;
 }
+#header_site #utility_links ul li a:hover {
+  text-decoration: underline;
+}
 #header_site #search {
   float: right;
 }
