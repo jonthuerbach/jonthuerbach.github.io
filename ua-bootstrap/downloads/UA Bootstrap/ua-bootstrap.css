@@ -1763,6 +1763,7 @@ a.label:focus {
   background-color: #eef1f1;
   color: #333333;
   padding: .5rem;
+  outline: 0;
 }
 #header_site #search .form-actions {
   display: inline;
@@ -1779,6 +1780,7 @@ a.label:focus {
   border: 0;
   background-repeat: no-repeat;
   background-position: 9px 7px;
+  outline: 0;
 }
 #header_site #search form {
   border: 1px solid #d3d7de;
