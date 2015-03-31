@@ -341,7 +341,7 @@ h4.example-heading {
 }
 .navbar {
   position: relative;
-  min-height: 50px;
+  min-height: 71px;
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
@@ -1564,5 +1564,11 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 @media (min-width: 768px) {
   #content_featured .interior-featured-bg {
     height: 250px;
+  }
+}
+@media (max-width: 479px) {
+  .starter-template img {
+    width: 50%;
+    margin: 0 auto;
   }
 }
