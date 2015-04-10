@@ -8,8 +8,26 @@
 
     <!-- Bootstrap -->
     <link href="../css/normalize.css" rel="stylesheet">
+    <!-- <link href="../css/catstrap-old.css" rel="stylesheet"> -->
+    <style type="text/css">
+    pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 16px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+}
+</style>
+
     <link href="../css/ua-bootstrap.css" rel="stylesheet">
     <link href="../css/styles.css" rel="stylesheet">
+    <script src="../js/highlight.pack.js"></script>
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,9 +42,20 @@
   			<div class="container">
 		  		<div class="row">
 		  			<div id="site_identifier">
-		  				<a href="#">
-		  					<img src="../img/placeholder-logo.png" />
-		  				</a>
+		  				<a href="#"><img src="../img/placeholder-logo.png" /></a>
+		  						          <!-- START CODE EXAMPLE -->
+
+				   <div class="collapse collapseCode">
+				   <div class="highlight">
+			            <pre>
+							<code class="html hljs xml">
+								TEST TEsT
+							</code>
+						</pre>
+					</div>
+		          </div>
+<!-- END CODE EXAMPLE -->
+
 		  			</div>
 		  			<div id="utility_links">
 		  				<ul>
@@ -57,7 +86,10 @@
   		</div><!-- /#header_site -->
   		<div id="content_featured">
   			<div class="interior-featured-bg text-center">
-  				<a href="#" class="btn btn-red btn-lg" style="margin-top: 5em;">Expose Code</a>
+          <button style="margin-top: 5em;" class="btn btn-primary btn-red" type="button" data-toggle="collapse" data-target=".collapseCode" aria-expanded="false" aria-controls="collapseCode">
+            Expose Code
+          </button>
+
   			</div>
   		</div>
 
@@ -100,6 +132,18 @@
 								<li><a href="#">Nobel Prize Winners</a> (3)</li>
 								<li><a href="#">Pulitzer Prize Winners</a> (2)</li>
 		          </ul>
+		          <!-- START CODE EXAMPLE -->
+
+				   <div class="collapse collapseCode">
+				   <div class="highlight">
+			            <pre>
+							<code class="html hljs xml">
+								TEST TEsT
+							</code>
+						</pre>
+					</div>
+		          </div>
+<!-- END CODE EXAMPLE -->
 							<p>&nbsp;</p>
 		          <table class="table">
 		          	<thead>
@@ -179,6 +223,18 @@
 		        			</ul>
 		        	</div>
 		        </div>
+<!-- START CODE EXAMPLE -->
+
+				   <div class="collapse collapseCode">
+				   <div class="highlight">
+			            <pre>
+							<code class="html hljs xml">
+								TEST TEsT
+							</code>
+						</pre>
+					</div>
+		          </div>
+<!-- END CODE EXAMPLE -->
 		        <!-- End Sidebar -->
 		      </div>
 		    </div>
@@ -206,6 +262,12 @@ Copyright 2014 © Arizona Board of Regents   |   <a href="#">Feedback</a>
 	  		</div><!-- /.container -->
 	  	</footer>
   	</div><!-- /#l_page -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../js/scripts.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
+   
   </body>
 </html>
