@@ -32,6 +32,11 @@
   .highlight {
     position: relative;
   }
+  .unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  }
 .highlight h5 {
   position: absolute;
   top: 0;
@@ -105,7 +110,7 @@ code{
             </div>
           </div>
           <!-- START CODE EXAMPLE -->
-          <div class="row">
+          <div class="row unselectable">
             <div class="collapse collapseCode">
               <div class="highlight">
                 <h5>LOGO CODE</h5>
