@@ -666,10 +666,20 @@ input[type="checkbox"] + label {
   margin-bottom: 0;
   padding-left: 25px;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 17px;
   cursor: pointer;
 }
+/*input[type="checkbox"] + label {*/
+  /*padding-left: 25px;*/
 
+/*}*/
+input[type="checkbox"] + label {
+  padding: 8px 0px 10px 25px;
+}
+input[type="radio"] + label {
+  line-height: 1.2;
+  padding: 9px 25px;
+}
 input[type="radio"],
 .radio-inline input[type="radio"],
 input[type="checkbox"],
@@ -708,7 +718,7 @@ input[type="checkbox"]:checked:focus + label:before {
   border: 1px #8f8f8f solid;
   box-shadow: inset 0 1px 1px rgba(235, 239, 238, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(113, 135, 142, 0.3);
-  line-height: 0.75;
+  line-height: 1.1;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
@@ -730,7 +740,7 @@ input[type="checkbox"] + label:before {
   content: "";
   text-align: center;
   font-size: 1.6em;
-  line-height: 0.7;
+  line-height: 1.1;
 }
 
 input[type="radio"] + label:before {
@@ -738,31 +748,34 @@ input[type="radio"] + label:before {
 }
 
 input[type="radio"]:checked + label:before {
-  color: #71878e;
+  color: hsl(194, 11%, 50%);
   content: "\2022";
   text-align: center;
   font-size: 29px;
-  line-height: 0.6;
+  line-height: 0.589;
+  padding-left: 1px;
 }
 
-input[type="checkbox"]:checked,
-input[type="checkbox"]:checked + label:before {
+input[type="checkbox"]:checked, input[type="checkbox"]:checked + label:before {
   outline: 0;
-  color: #71878E;
+  color: hsl(194, 11%, 50%);
   content: "\2713";
   text-align: center;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  font-size: 1em;
+  text-shadow: 1px 1px 1px hsla(0, 0%, 0%, 0.2);
+  font-size: 16px;
   line-height: 1;
 }
 
 label {
   display: block;
   margin-bottom: 5px;
-  padding: 9px;
-  color: #909090;
-  font-weight: normal;
-  font-size: 1.6em;
+  padding: 9px 0 0 0;
+  color: hsl(0, 0%, 56%);
+  font-weight: bold;
+  font-size: 1em;
+}
+.form-required {
+  color: hsl(350, 94%, 35%);
 }
 
 form {
