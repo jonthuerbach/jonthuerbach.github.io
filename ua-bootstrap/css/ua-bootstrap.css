@@ -769,7 +769,7 @@ input[type="checkbox"]:checked, input[type="checkbox"]:checked + label:before {
 label {
   display: block;
   margin-bottom: 5px;
-  padding: 9px 0 0 0;
+  padding: 20px 0 0 0;
   color: hsl(0, 0%, 56%);
   font-weight: bold;
   font-size: 1em;
