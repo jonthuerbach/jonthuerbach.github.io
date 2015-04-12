@@ -327,7 +327,13 @@ ul.triangle li:before {
   content: '';
 }
 ul.triangle a {
-  color: #395180;
+  color: hsl(220, 38%, 36%);
+  border-bottom: 2px solid hsla(0, 0%, 0%, 0);
+  padding: 1px 0;
+}
+ul.triangle a:hover {
+  border-bottom: 2px solid hsl(220, 38%, 36%);
+  text-decoration:none;
 }
 dl {
   margin-top: 0;
