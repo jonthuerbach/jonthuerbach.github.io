@@ -1423,8 +1423,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   list-style: none;
 }
 .breadcrumb a {
-  color: #666;
+  color: hsl(0, 0%, 40%);
   font-weight: normal;
+  border-bottom: 2px solid hsla(0, 0%, 0%, 0);
+  padding: 1px 0;
+}
+.breadcrumb a:hover {
+  border-bottom: 2px solid #666;
+  text-decoration:none;
 }
 .breadcrumb > li {
   display: inline-block;
