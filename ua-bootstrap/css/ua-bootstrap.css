@@ -1856,13 +1856,16 @@ a.label:focus {
   font-size: 16px;
   font-size: 1rem;
   text-decoration: none;
+  border-bottom: 2px solid transparent;
   color: #6b868d;
   text-transform: none;
   font-family: MiloWeb-Text, sans-serif;
   font-weight: normal;
 }
 #header_site #utility_links ul li a:hover {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
+  text-decoration: none;
+  border-bottom: 2px solid #6b868d;
 }
 #header_site #search {
   float: right;

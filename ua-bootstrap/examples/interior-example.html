@@ -126,14 +126,15 @@ code{
               <div class="highlight">
                 <h5>UTILITY LINKS CODE</h5>
                 <pre>
-                  <code class="html">&lt;div id=&quot;header_site&quot;&gt;
-   &lt;div id=&quot;utility_links&quot;&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Utility Link 1&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Utility Link 2&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Utility Link 3&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;</code>
+                  <code class="html">&lt;!-- We should change the scope of the CSS to not include #header_site since there is already #utility_links --&gt;
+&lt;div id=&quot;header_site&quot;&gt;
+ &lt;div id=&quot;utility_links&quot;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Utility Link 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Utility Link 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Utility Link 3&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code>
                 </pre>
               </div>
             </div>
@@ -143,7 +144,8 @@ code{
               <div class="highlight">
                 <h5>SEARCH BOX CODE</h5>
                 <pre>
-                  <code class="html">&lt;div id=&quot;header_site&quot;&gt;
+                  <code class="html">&lt;!-- We should change the scope of the CSS to not include #header_site since there is already #search --&gt;
+&lt;div id=&quot;header_site&quot;&gt;
  &lt;div id=&quot;search&quot;&gt;
    &lt;form&gt;
      &lt;div class=&quot;form-item&quot;&gt;
@@ -241,7 +243,9 @@ code{
               <div class="highlight">
                 <h5>UNORDERED LIST STRUCTURE</h5>
                 <pre>
-                  <code class="html hljs xml">&lt;ul class=&quot;triangle&quot;&gt;
+                  <code class="html">&lt;!-- We should change the scope of the CSS here so content editors do not need
+to add the triangle class, at least in the main content areas. --&gt;
+&lt;ul class=&quot;triangle&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;American Academy of Arts and Sciences&lt;/a&gt; (14)&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Association of the Advancement of Science Fellows&lt;/a&gt; (24)&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Fulbright Scholars - Council for International Exchange&lt;/a&gt; (10)&lt;/li&gt;
@@ -327,7 +331,8 @@ code{
                     <div class="highlight">
                       <h5>CHECKBOX CODE</h5>
                       <pre>
-                        <code class="html hljs xml">&lt;div class=&quot;input-group&quot;&gt;
+                        <code class="html">&lt;!-- For the checkboxes to render properly the minimum requirements are shown. --&gt;
+&lt;div class=&quot;input-group&quot;&gt;
   &lt;label&gt; Checkboxes
     &lt;span class=&quot;form-required&quot; title=&quot;This field is required.&quot;&gt;*&lt;/span&gt;
   &lt;/label&gt;
