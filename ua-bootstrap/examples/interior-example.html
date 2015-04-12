@@ -8,6 +8,7 @@
 
   <!-- Bootstrap -->
   <link href="../css/normalize.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/default.min.css">
   <!-- <link href="../css/catstrap-old.css" rel="stylesheet"> -->
   <style type="text/css">
   pre {
@@ -115,7 +116,7 @@ code{
               <div class="highlight">
                 <h5>LOGO CODE</h5>
                 <pre>
-                  <code class="html hljs xml"> CODE GOES HERE </code>
+                  <code class="html"> CODE GOES HERE </code>
                 </pre>
               </div>
             </div>
@@ -125,7 +126,14 @@ code{
               <div class="highlight">
                 <h5>UTILITY LINKS CODE</h5>
                 <pre>
-                  <code class="html hljs xml"> CODE GOES HERE </code>
+                  <code class="html">&lt;div id=&quot;header_site&quot;&gt;
+   &lt;div id=&quot;utility_links&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Utility Link 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Utility Link 2&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Utility Link 3&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;</code>
                 </pre>
               </div>
             </div>
@@ -135,28 +143,39 @@ code{
               <div class="highlight">
                 <h5>SEARCH BOX CODE</h5>
                 <pre>
-                  <code class="html hljs xml"> CODE GOES HERE </code>
+                  <code class="html">&lt;div id=&quot;header_site&quot;&gt;
+ &lt;div id=&quot;search&quot;&gt;
+   &lt;form&gt;
+     &lt;div class=&quot;form-item&quot;&gt;
+       &lt;input title=&quot;Search&quot; type=&quot;text&quot; value=&quot;&quot; size=&quot;15&quot; maxlength=&quot;128&quot;&gt;
+     &lt;/div&gt;
+     &lt;div class=&quot;form-actions&quot;&gt;
+       &lt;input type=&quot;submit&quot; id=&quot;edit-submit&quot; name=&quot;op&quot; value=&quot;Search&quot; class=&quot;form-submit&quot;&gt;
+     &lt;/div&gt;
+   &lt;/form&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</code>
                 </pre>
               </div>
             </div>
           </div>
           <!-- END CODE EXAMPLE -->
           <div class="row">
-          <div id="main_nav">
-            <ul>
-              <li><a href="../index.html">Download</a></li>
-              <li><a href="../css.html">CSS</a></li>
-              <li class="last"><a href="#">Interior Page Example</a></li>
-            </ul>
+            <div id="main_nav">
+              <ul>
+                <li><a href="../index.html">Download</a></li>
+                <li><a href="../css.html">CSS</a></li>
+                <li class="last"><a href="#">Interior Page Example</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
         <!-- START CODE EXAMPLE -->
           <div class="row">
             <div class="collapse collapseCode">
               <div class="highlight">
                 <h5>MENU CODE</h5>
                 <pre>
-                  <code class="html hljs xml"> CODE GOES HERE </code>
+                  <code class="hljs xml"> CODE GOES HERE </code>
                 </pre>
               </div>
             </div>
@@ -185,7 +204,11 @@ code{
               <div class="highlight">
                 <h5>BREADCRUMB CODE</h5>
                 <pre>
-                  <code class="html hljs xml"> CODE GOES HERE </code>
+                  <code class="html hljs xml">&lt;ol class=&quot;breadcrumb&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Parent Page&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;active&quot;&gt;Page Title&lt;/li&gt;
+  &lt;/ol&gt;</code>
                 </pre>
               </div>
           </div>
@@ -218,7 +241,19 @@ code{
               <div class="highlight">
                 <h5>UNORDERED LIST STRUCTURE</h5>
                 <pre>
-                  <code class="html hljs xml"> CODE GOES HERE </code>
+                  <code class="html hljs xml">&lt;ul class=&quot;triangle&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;American Academy of Arts and Sciences&lt;/a&gt; (14)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Association of the Advancement of Science Fellows&lt;/a&gt; (24)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Fulbright Scholars - Council for International Exchange&lt;/a&gt; (10)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Guggenheim Fellowship Award Winners&lt;/a&gt; (11)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;MacArthur Fellows Program&lt;/a&gt; (7)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;National Academy of Education&lt;/a&gt; (2)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;National Academy of Engineering&lt;/a&gt; (15)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;National Academy of Sciences&lt;/a&gt; (22)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;National Academy of Sciences Institute of Medicine&lt;/a&gt; (4)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Nobel Prize Winners&lt;/a&gt; (3)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Pulitzer Prize Winners&lt;/a&gt; (2)&lt;/li&gt;
+&lt;/ul&gt;</code>
                 </pre>
               </div>
             </div>
@@ -292,7 +327,23 @@ code{
                     <div class="highlight">
                       <h5>CHECKBOX CODE</h5>
                       <pre>
-                        <code class="html hljs xml"> CODE GOES HERE </code>
+                        <code class="html hljs xml">&lt;div class=&quot;input-group&quot;&gt;
+  &lt;label&gt; Checkboxes
+    &lt;span class=&quot;form-required&quot; title=&quot;This field is required.&quot;&gt;*&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;div class=&quot;checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;custom-checkbox-1&quot;&gt;
+    &lt;label for=&quot;custom-checkbox-1&quot;&gt;Check box&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;custom-checkbox-2&quot;&gt;
+    &lt;label for=&quot;custom-checkbox-2&quot;&gt;Check box&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;custom-checkbox-3&quot;&gt;
+    &lt;label for=&quot;custom-checkbox-3&quot;&gt;Check box&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
                       </pre>
                     </div>
                   </div>
@@ -317,9 +368,25 @@ code{
                 <!-- START CODE EXAMPLE -->
                   <div class="collapse collapseCode">
                     <div class="highlight">
-                      <h5>CHECKBOX CODE</h5>
+                      <h5>INLINE CHECKBOX CODE</h5>
                       <pre>
-                        <code class="html hljs xml"> CODE GOES HERE </code>
+                        <code class="html hljs xml">&lt;div class=&quot;input-group&quot;&gt;
+  &lt;label&gt; Inline Checkboxes
+    &lt;span class=&quot;form-required&quot; title=&quot;This field is required.&quot;&gt;*&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;div class=&quot;checkbox checkbox-inline&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;custom-checkbox-4&quot;&gt;
+    &lt;label for=&quot;custom-checkbox-4&quot;&gt;Check box&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;checkbox checkbox-inline&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;custom-checkbox-5&quot;&gt;
+    &lt;label for=&quot;custom-checkbox-5&quot;&gt;Check box&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;checkbox checkbox-inline&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;custom-checkbox-6&quot;&gt;
+    &lt;label for=&quot;custom-checkbox-6&quot;&gt;Check box&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
                       </pre>
                     </div>
                   </div>
@@ -346,7 +413,23 @@ code{
                     <div class="highlight">
                       <h5>RADIO CODE</h5>
                       <pre>
-                        <code class="html hljs xml"> CODE GOES HERE </code>
+                        <code class="html hljs xml">&lt;div class=&quot;input-group&quot;&gt;
+  &lt;label&gt; Radios
+    &lt;span class=&quot;form-required&quot; title=&quot;This field is required.&quot;&gt;*&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;div class=&quot;radio&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;optionsRadios&quot; id=&quot;custom-radio-1&quot; value=&quot;option1&quot; checked&gt;
+    &lt;label for=&quot;custom-radio-1&quot;&gt; Radio button &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;radio&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;optionsRadios&quot; id=&quot;custom-radio-2&quot; value=&quot;option1&quot; checked&gt;
+    &lt;label for=&quot;custom-radio-2&quot;&gt; Radio button &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;radio&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;optionsRadios&quot; id=&quot;custom-radio-3&quot; value=&quot;option1&quot; checked&gt;
+    &lt;label for=&quot;custom-radio-3&quot;&gt; Radio button &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
                       </pre>
                     </div>
                   </div>
@@ -371,9 +454,25 @@ code{
                 <!-- START CODE EXAMPLE -->
                   <div class="collapse collapseCode">
                     <div class="highlight">
-                      <h5>RADIO CODE</h5>
+                      <h5>INLINE RADIO CODE</h5>
                       <pre>
-                        <code class="html hljs xml"> CODE GOES HERE </code>
+                        <code class="html hljs xml">&lt;div class=&quot;input-group&quot;&gt;
+  &lt;label&gt;Inline Radios
+    &lt;span class=&quot;form-required&quot; title=&quot;This field is required.&quot;&gt;*&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;div class=&quot;radio-inline radio&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;optionsRadiosInline&quot; id=&quot;custom-radio-4&quot; value=&quot;option1&quot; checked=&quot;&quot;&gt;
+    &lt;label for=&quot;custom-radio-4&quot;&gt; Radio button &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;radio-inline radio&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;optionsRadiosInline&quot; id=&quot;custom-radio-5&quot; value=&quot;option1&quot; checked=&quot;&quot;&gt;
+    &lt;label for=&quot;custom-radio-5&quot;&gt; Radio button &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;radio radio-inline&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;optionsRadiosInline&quot; id=&quot;custom-radio-6&quot; value=&quot;option1&quot; checked=&quot;&quot;&gt;
+    &lt;label for=&quot;custom-radio-6&quot;&gt; Radio button &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
                       </pre>
                     </div>
                   </div>
@@ -448,11 +547,20 @@ code{
         </footer>
       </div><!-- /#l_page -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script>
+
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $('pre code').each(function(i, block) {
+            hljs.highlightBlock(block);
+          });
+        });
+      </script>
       <script src="../js/scripts.js"></script>
       <script src="../js/bootstrap.min.js"></script>
       <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
       <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+      <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
 
     </body>
 </html>
