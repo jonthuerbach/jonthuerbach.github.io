@@ -846,7 +846,7 @@ form:first-child {
 .radio-inline + .radio-inline,
 .checkbox-inline + .checkbox-inline {
   margin-top: 0;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 input[type="radio"][disabled],
 input[type="checkbox"][disabled],
