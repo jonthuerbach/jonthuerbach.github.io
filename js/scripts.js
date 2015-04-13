@@ -59,5 +59,27 @@ $(document).ready(function(){
 
   // BOOTSTRAP SCROLLSPY
   $('body').scrollspy({ target: '#main-nav' })
+    $('#content_featured_nav').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        directionNav: false,
+        itemWidth: 300,
+        asNavFor: "#content_featured",
+        selector: ".nav-items > li"
+    });
+    $('#content_featured').flexslider({
+        animation: "slide",
+        controlNav: false,
+        slideshow: false,
+        directionNav: true,
+        //prevText: "Previous",
+        //nextText: "Next",
+        prevText: "<i class='ua-brand-left-corner'></i>",
+        nextText: "<i class='ua-brand-right-corner'></i>",
+        sync: "#content_featured_nav",
+    });
+
 
 })

@@ -34,8 +34,8 @@ h3 {
   padding: 24px 40px;
   padding: 1.5rem 2.5rem;
 }
-.navbar-nav > .active > a, 
-.navbar-nav > .active > a:hover, 
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
 .navbar-nav > .active > a:focus {
 	/*color: #fff;*/
 	background-color: #f9f9f9;
@@ -1553,6 +1553,9 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 #content_featured {
   margin-bottom: 24px;
   margin-bottom: 2rem;
+}
+#content_featured.flexslider {
+  margin-bottom: 0rem;
 }
 #content_featured .interior-featured-bg {
   clear: both;
