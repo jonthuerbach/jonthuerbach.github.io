@@ -316,12 +316,12 @@ code {
   color: #ab0520;
   background-color: #f9f2f4;
 }
-ul,
-ol {
+ul, ol {
   margin-top: 0;
   margin-bottom: 0.625em;
   padding-left: 33px;
-  padding-left: 2.1rem;
+  padding-left: 1.1rem;
+  overflow: hidden;
 }
 ul ul,
 ol ul,
@@ -383,6 +383,9 @@ dd {
   }
   .dl-horizontal dd {
     margin-left: 180px;
+  }
+  ul, ol {
+    padding-left: 2.1rem;
   }
 }
 abbr[title],
