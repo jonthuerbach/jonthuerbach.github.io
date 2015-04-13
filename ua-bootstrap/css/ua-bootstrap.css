@@ -449,6 +449,23 @@ table > colgroup + thead > tr:first-child > td,
 table > thead:first-child > tr:first-child > td {
   border-top: 0;
 }
+@media screen and (max-width: 767px) {
+    .table-responsive>.table>tbody>tr>td,
+    .table-responsive>.table>tbody>tr>th,
+    .table-responsive>.table>tfoot>tr>td,
+    .table-responsive>.table>tfoot>tr>th,
+    .table-responsive>.table>thead>tr>td,
+    .table-responsive>.table>thead>tr>th {
+          white-space: nowrap;
+      }
+      .table-responsive {
+            width: 100%;
+              margin-bottom: 15px;
+                overflow-y: hidden;
+                  -ms-overflow-style: -ms-autohiding-scrollbar;
+                    border: 1px solid #ddd;
+                }
+}
 table > tbody + tbody {
   border-top: 2px solid #ddd;
 }
@@ -1593,12 +1610,6 @@ a.label:focus {
   margin-right: auto;
   margin-left: auto;
 }
-.pull-right {
-  float: right !important;
-}
-.pull-left {
-  float: left !important;
-}
 .hide {
   display: none !important;
 }
@@ -1854,6 +1865,12 @@ a.label:focus {
   margin: 0 auto;
 }
 @media (min-width: 768px) {
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
   #header_site #site_identifier a {
     float: left;
     margin: 2.5rem 0;
