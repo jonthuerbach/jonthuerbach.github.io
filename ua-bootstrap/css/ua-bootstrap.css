@@ -752,6 +752,7 @@ input[type="radio"]:checked:focus {
   outline-offset: 7px;
 }
 
+.radio:hover label:before,
 input[type="radio"]:focus + label:before,
 input[type="radio"]:checked:focus + label:before {
   border: 1px #909090 solid;
@@ -761,6 +762,7 @@ input[type="radio"]:checked:focus + label:before {
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
+.checkbox:hover label:before,
 input[type="checkbox"]:focus + label:before,
 input[type="checkbox"]:checked:focus + label:before {
   border: 1px #8f8f8f solid;
