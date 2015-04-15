@@ -1,211 +1,624 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UA Bootstrap - Example Page</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UA Bootstrap - Example Page</title>
 
-    <!-- Bootstrap -->
-    <link href="../css/normalize.css" rel="stylesheet">
-    <link href="../css/ua-bootstrap.css" rel="stylesheet">
-    <link href="../css/styles.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="../css/normalize.css" rel="stylesheet">
+  <!-- Hightlight.js css used for Code examples, not part of ua-bootstrap -->
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/default.min.css">
+  <!-- <link href="../css/catstrap-old.css" rel="stylesheet"> -->
+  <style type="text/css">
+  pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 16px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+  }
+  .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: hsl(0, 0%, 0%);
+  -webkit-text-size-adjust: none;
+  }
+  .highlight {
+    position: relative;
+  }
+  .unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  }
+.highlight h5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: block;
+  padding: 5px 8px;
+  font-size: 12px;
+  color: hsl(0, 0%, 46%);
+  cursor: pointer;
+  background-color: hsl(0, 100%, 100%);
+  border: 1px solid hsl(240, 13%, 90%);
+  border-radius: 0 4px 0 4px;
+  margin: 0;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+}
+pre{
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+}
+code{
+  -moz-user-select: all;
+  -webkit-user-select: all;
+  -ms-user-select: all;
+
+}
+  </style>
+
+  <link href="../css/ua-bootstrap.css" rel="stylesheet">
+  <link href="../css/styles.css" rel="stylesheet">
+  <script src="../js/highlight.pack.js"></script>
+
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+      <![endif]-->
   </head>
   <body>
-  	<div id="l_page">
-  		<div id="header_site">
-  			<div class="container">
-		  		<div class="row">
-		  			<div id="site_identifier">
-		  				<a href="#">
-		  					<img src="../img/placeholder-logo.png" />
-		  				</a>
-		  			</div>
-		  			<div id="utility_links">
-		  				<ul>
-		  					<li><a href="#">Utility Link 1</a></li>
-		  					<li><a href="#">Utility Link 2</a></li>
-		  					<li><a href="#">Utility Link 3</a></li>
-		  				</ul>
-		  			</div>
-		  			<div id="search">
-		  				<form>
-		  					<div class="form-item">
-		  						<input title="Search" type="text" value="" size="15" maxlength="128">
-		  					</div>
-		  					<div class="form-actions">
-		  						<input type="submit" id="edit-submit" name="op" value="Search" class="form-submit">
-		  					</div>
-		  				</form>
-		  			</div>
-		  			<div id="main_nav">
-		  				<ul>
-		  					<li><a href="../index.html">Download</a></li>
-		  					<li><a href="../css.html">CSS</a></li>
-		  					<li class="last"><a href="#">Interior Page Example</a></li>
-		  				</ul>
-		  			</div>
-		  		</div>
-	  		</div><!-- /.container -->
-  		</div><!-- /#header_site -->
-  		<div id="content_featured">
-  			<div class="interior-featured-bg text-center">
-  				<a href="#" class="btn btn-red btn-lg" style="margin-top: 5em;">Expose Code</a>
-  			</div>
-  		</div>
+    <header id="region_header_ua" class="l-arizona-header bg-cochineal-red">
+      <section class="container l-container">
+        <div class="row">
+          <a href="http://www.arizona.edu" title="The University of Arizona homepage" class="arizona-logo"><img alt="The University of Arizona Wordmark Line Logo White" src="https://brand.arizona.edu/sites/default/files/digital-resources/ua_wordmark_line_logo_white_rgb.svg" class="arizona-line-logo"></a>
+        </div>
+      </section>
+    </header>
+    <!-- START CODE EXAMPLE -->
+    <div class="container">
+      <div class="row unselectable">
+        <div class="collapse collapseCode">
+          <div class="highlight">
+            <h5>Arizona Banner</h5>
+            <pre>
+              <code class="html"><span class="unselectable">&lt;body&gt;</span>
+ &lt;header id=&quot;region_header_ua&quot; class=&quot;l-arizona-header bg-cochineal-red&quot;&gt;
+   &lt;section class=&quot;container l-container&quot;&gt;
+     &lt;div class=&quot;row&quot;&gt;
+       &lt;a href=&quot;http://www.arizona.edu&quot; title=&quot;The University of Arizona homepage&quot; class=&quot;arizona-logo&quot;&gt;
+          &lt;img alt=&quot;The University of Arizona Wordmark Line Logo White&quot; src=&quot;https://brand.arizona.edu/sites/default/files/digital-resources/ua_wordmark_line_logo_white_rgb.svg&quot; class=&quot;arizona-line-logo&quot;&gt;
+       &lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+ &lt;/header&gt;</code>
+            </pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END CODE EXAMPLE -->
+    <div id="l_page">
+      <div id="header_site">
+        <div class="container">
+          <div class="row">
+            <div id="site_identifier">
+              <a href="#"><img src="../img/placeholder-logo.png" /></a>
 
-  		<div id="content_main">
-		    <div class="container">
-		      <div class="row">
-		        <div id="content" class="col-md-9 pull-right">
-		        	<ol class="breadcrumb">
-							  <li><a href="#">Home</a></li>
-							  <li><a href="#">Parent Page</a></li>
-							  <li class="active">Page Title</li>
-							</ol>
-		          <h1>Page Title</h1>
+            </div>
+            <div id="utility_links">
+              <ul>
+                <li><a href="#">Utility Link 1</a></li>
+                <li><a href="#">Utility Link 2</a></li>
+                <li><a href="#">Utility Link 3</a></li>
+              </ul>
+            </div>
+            <div id="search">
+              <form>
+                <div class="form-item">
+                  <input title="Search" type="text" value="" size="15" maxlength="128">
+                </div>
+                <div class="form-actions">
+                  <input type="submit" id="edit-submit" name="op" value="Search" class="form-submit">
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- START CODE EXAMPLE -->
+          <div class="row unselectable">
+            <div class="collapse collapseCode">
+              <div class="highlight">
+                <h5>LOGO CODE</h5>
+                <pre>
+                  <code class="html"> CODE GOES HERE </code>
+                </pre>
+              </div>
+            </div>
+          <!-- END CODE EXAMPLE -->
+          <!-- START CODE EXAMPLE -->
+            <div class="collapse collapseCode">
+              <div class="highlight">
+                <h5>UTILITY LINKS CODE</h5>
+                <pre>
+                  <code class="html">&lt;!-- We should change the scope of the CSS to not include #header_site since there is already #utility_links --&gt;
+&lt;div id=&quot;header_site&quot;&gt;
+ &lt;div id=&quot;utility_links&quot;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Utility Link 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Utility Link 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Utility Link 3&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code>
+                </pre>
+              </div>
+            </div>
+          <!-- END CODE EXAMPLE -->
+          <!-- START CODE EXAMPLE -->
+            <div class="collapse collapseCode">
+              <div class="highlight">
+                <h5>SEARCH BOX CODE</h5>
+                <pre>
+                  <code class="html">&lt;!-- We should change the scope of the CSS to not include #header_site since there is already #search --&gt;
+&lt;div id=&quot;header_site&quot;&gt;
+ &lt;div id=&quot;search&quot;&gt;
+   &lt;form&gt;
+     &lt;div class=&quot;form-item&quot;&gt;
+       &lt;input title=&quot;Search&quot; type=&quot;text&quot; value=&quot;&quot; size=&quot;15&quot; maxlength=&quot;128&quot;&gt;
+     &lt;/div&gt;
+     &lt;div class=&quot;form-actions&quot;&gt;
+       &lt;input type=&quot;submit&quot; id=&quot;edit-submit&quot; name=&quot;op&quot; value=&quot;Search&quot; class=&quot;form-submit&quot;&gt;
+     &lt;/div&gt;
+   &lt;/form&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</code>
+                </pre>
+              </div>
+            </div>
+          </div>
+          <!-- END CODE EXAMPLE -->
+          <div class="row">
+            <div id="main_nav">
+              <ul>
+                <li><a href="index.html">Download</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li class="last"><a href="#">Interior Page Example</a></li>
+              </ul>
+            </div>
+          </div>
+        <!-- START CODE EXAMPLE -->
+          <div class="row">
+            <div class="collapse collapseCode">
+              <div class="highlight">
+                <h5>MENU CODE</h5>
+                <pre>
+                  <code class="hljs xml"> CODE GOES HERE </code>
+                </pre>
+              </div>
+            </div>
+          </div>
+        <!-- END CODE EXAMPLE -->
+        </div><!-- /.container -->
+      </div><!-- /#header_site -->
+      <div id="content_featured">
+        <div class="interior-featured-bg text-center">
+          <button style="margin-top: 5em;" class="btn btn-primary btn-red" type="button" data-toggle="collapse" data-target=".collapseCode" aria-expanded="false" aria-controls="collapseCode">
+            Expose Code
+          </button>
+        </div>
+      </div>
+      <div id="content_main">
+        <div class="container">
+          <div class="row">
+            <div id="content" class="col-md-9 pull-right">
+              <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Parent Page</a></li>
+                <li class="active">Page Title</li>
+              </ol>
+        <!-- START CODE EXAMPLE -->
+            <div class="collapse collapseCode">
+              <div class="highlight">
+                <h5>BREADCRUMB CODE</h5>
+                <pre>
+                  <code class="html hljs xml">&lt;ol class=&quot;breadcrumb&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Parent Page&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;active&quot;&gt;Page Title&lt;/li&gt;
+&lt;/ol&gt;</code>
+                </pre>
+              </div>
+          </div>
+        <!-- END CODE EXAMPLE -->
+              <h1>Page Title</h1>
+              <p class="lead">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+        <!-- START CODE EXAMPLE -->
+            <div class="collapse collapseCode">
+              <div class="highlight">
+                <h5>Subheading Example</h5>
+                <pre>
+                  <code class="html"> &lt;p class=&quot;lead&quot;&gt;...&lt;/p&gt; </code>
+                </pre>
+              </div>
+            </div>
+        <!-- END CODE EXAMPLE -->
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <img src="../img/example-image.jpg" class="img-responsive" style="margin: 0.5rem 2rem 0.5rem 0" />
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et.</p>
+              <p><a href="#">Link style</a></p>
+              <p><a href="#" class="btn btn-lg btn-red">Button style</a><a href="#" class="btn btn-lg btn-blue" style="margin-left: 8px;">Button style</a></p>
+              <p>&nbsp;</p>
+              <h3>Paragraph Title</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <ul class="triangle">
+                <li><a href="#">American Academy of Arts and Sciences</a> (14)</li>
+                <li><a href="#">Association of the Advancement of Science Fellows</a> (24)</li>
+                <li><a href="#">Fulbright Scholars - Council for International Exchange</a> (10)</li>
+                <li><a href="#">Guggenheim Fellowship Award Winners</a> (11)</li>
+                <li><a href="#">MacArthur Fellows Program</a> (7)</li>
+                <li><a href="#">National Academy of Education</a> (2)</li>
+                <li><a href="#">National Academy of Engineering</a> (15)</li>
+                <li><a href="#">National Academy of Sciences</a> (22)</li>
+                <li><a href="#">National Academy of Sciences Institute of Medicine</a> (4)</li>
+                <li><a href="#">Nobel Prize Winners</a> (3)</li>
+                <li><a href="#">Pulitzer Prize Winners</a> (2)</li>
+              </ul>
+        <!-- START CODE EXAMPLE -->
+            <div class="collapse collapseCode">
+              <div class="highlight">
+                <h5>UNORDERED LIST STRUCTURE</h5>
+                <pre>
+                  <code class="html">&lt;!-- We should change the scope of the CSS here so content editors do not need
+to add the triangle class, at least in the main content areas. --&gt;
+&lt;ul class=&quot;triangle&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;American Academy of Arts and Sciences&lt;/a&gt; (14)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Association of the Advancement of Science Fellows&lt;/a&gt; (24)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Fulbright Scholars - Council for International Exchange&lt;/a&gt; (10)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Guggenheim Fellowship Award Winners&lt;/a&gt; (11)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;MacArthur Fellows Program&lt;/a&gt; (7)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;National Academy of Education&lt;/a&gt; (2)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;National Academy of Engineering&lt;/a&gt; (15)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;National Academy of Sciences&lt;/a&gt; (22)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;National Academy of Sciences Institute of Medicine&lt;/a&gt; (4)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Nobel Prize Winners&lt;/a&gt; (3)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Pulitzer Prize Winners&lt;/a&gt; (2)&lt;/li&gt;
+&lt;/ul&gt;</code>
+                </pre>
+              </div>
+            </div>
+        <!-- END CODE EXAMPLE -->
+        <p>&nbsp;</p>
+              <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Table Header</th>
+                    <th>&nbsp;</th>
+                    <th>&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>J. Roger P. Angel</td>
+                    <td>PhD</td>
+                    <td>Director-Steward Observatory Mirror Laboratory</td>
+                  </tr>
+                  <tr>
+                    <td>Julia E. Annas</td>
+                    <td>PhD</td>
+                    <td>Professor of Philosophy</td>
+                  </tr>
+                  <tr>
+                    <td>W. David Arnett</td>
+                    <td>PhD</td>
+                    <td>Professor of Astronomy</td>
+                  </tr>
+                  <tr>
+                    <td>Nicolaas Bloembergen</td>
+                    <td>PhD</td>
+                    <td>Professor of Optical Sciences</td>
+                  </tr>
+                  <tr>
+                    <td>John G. Hildebrand</td>
+                    <td>PhD</td>
+                    <td>Professor of Astronomy</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+              <p>&nbsp;</p>
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Input Title</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Placeholder text">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Input Title</label>
+                  <textarea class="form-control" rows="5" placeholder="Placeholder text"></textarea>
+                </div>
+                <div class="input-group">
+                  <label> Checkboxes
+                    <span class="form-required" title="This field is required.">*</span>
+                  </label>
+                  <div class="checkbox">
+                    <input type="checkbox" value="" id="custom-checkbox-1">
+                    <label for="custom-checkbox-1">Check box</label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" value="" id="custom-checkbox-2">
+                    <label for="custom-checkbox-2">Check box</label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" value="" id="custom-checkbox-3">
+                    <label for="custom-checkbox-3">Check box</label>
+                  </div>
+                </div>
+                <!-- START CODE EXAMPLE -->
+                  <div class="collapse collapseCode">
+                    <div class="highlight">
+                      <h5>CHECKBOX CODE</h5>
+                      <pre>
+                        <code class="html">&lt;!-- For the checkboxes to render properly the minimum requirements are shown. --&gt;
+&lt;div class=&quot;input-group&quot;&gt;
+  &lt;label&gt; Checkboxes
+    &lt;span class=&quot;form-required&quot; title=&quot;This field is required.&quot;&gt;*&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;div class=&quot;checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;custom-checkbox-1&quot;&gt;
+    &lt;label for=&quot;custom-checkbox-1&quot;&gt;Check box&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;custom-checkbox-2&quot;&gt;
+    &lt;label for=&quot;custom-checkbox-2&quot;&gt;Check box&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;custom-checkbox-3&quot;&gt;
+    &lt;label for=&quot;custom-checkbox-3&quot;&gt;Check box&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+                      </pre>
+                    </div>
+                  </div>
+                <!-- END CODE EXAMPLE -->
+                <div class="input-group">
+                  <label> Inline Checkboxes
+                    <span class="form-required" title="This field is required.">*</span>
+                  </label>
+                  <div class="checkbox checkbox-inline">
+                    <input type="checkbox" value="" id="custom-checkbox-4">
+                    <label for="custom-checkbox-4">Check box</label>
+                  </div>
+                  <div class="checkbox checkbox-inline">
+                    <input type="checkbox" value="" id="custom-checkbox-5">
+                    <label for="custom-checkbox-5">Check box</label>
+                  </div>
+                  <div class="checkbox checkbox-inline">
+                    <input type="checkbox" value="" id="custom-checkbox-6">
+                    <label for="custom-checkbox-6">Check box</label>
+                  </div>
+                </div>
+                <!-- START CODE EXAMPLE -->
+                  <div class="collapse collapseCode">
+                    <div class="highlight">
+                      <h5>INLINE CHECKBOX CODE</h5>
+                      <pre>
+                        <code class="html hljs xml">&lt;div class=&quot;input-group&quot;&gt;
+  &lt;label&gt; Inline Checkboxes
+    &lt;span class=&quot;form-required&quot; title=&quot;This field is required.&quot;&gt;*&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;div class=&quot;checkbox checkbox-inline&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;custom-checkbox-4&quot;&gt;
+    &lt;label for=&quot;custom-checkbox-4&quot;&gt;Check box&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;checkbox checkbox-inline&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;custom-checkbox-5&quot;&gt;
+    &lt;label for=&quot;custom-checkbox-5&quot;&gt;Check box&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;checkbox checkbox-inline&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;custom-checkbox-6&quot;&gt;
+    &lt;label for=&quot;custom-checkbox-6&quot;&gt;Check box&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+                      </pre>
+                    </div>
+                  </div>
+                <!-- END CODE EXAMPLE -->
+                <div class="input-group">
+                  <label> Radios
+                    <span class="form-required" title="This field is required.">*</span>
+                  </label>
+                  <div class="radio">
+                    <input type="radio" name="optionsRadios" id="custom-radio-1" value="option1" checked>
+                    <label for="custom-radio-1"> Radio button </label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" name="optionsRadios" id="custom-radio-2" value="option1" checked>
+                    <label for="custom-radio-2"> Radio button </label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" name="optionsRadios" id="custom-radio-3" value="option1" checked>
+                    <label for="custom-radio-3"> Radio button </label>
+                  </div>
+                </div>
+                <!-- START CODE EXAMPLE -->
+                  <div class="collapse collapseCode">
+                    <div class="highlight">
+                      <h5>RADIO CODE</h5>
+                      <pre>
+                        <code class="html hljs xml">&lt;div class=&quot;input-group&quot;&gt;
+  &lt;label&gt; Radios
+    &lt;span class=&quot;form-required&quot; title=&quot;This field is required.&quot;&gt;*&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;div class=&quot;radio&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;optionsRadios&quot; id=&quot;custom-radio-1&quot; value=&quot;option1&quot; checked&gt;
+    &lt;label for=&quot;custom-radio-1&quot;&gt; Radio button &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;radio&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;optionsRadios&quot; id=&quot;custom-radio-2&quot; value=&quot;option1&quot; checked&gt;
+    &lt;label for=&quot;custom-radio-2&quot;&gt; Radio button &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;radio&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;optionsRadios&quot; id=&quot;custom-radio-3&quot; value=&quot;option1&quot; checked&gt;
+    &lt;label for=&quot;custom-radio-3&quot;&gt; Radio button &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+                      </pre>
+                    </div>
+                  </div>
+                <!-- END CODE EXAMPLE -->
+                <div class="input-group">
+                  <label>Inline Radios
+                    <span class="form-required" title="This field is required.">*</span>
+                  </label>
+                  <div class="radio-inline radio">
+                    <input type="radio" name="optionsRadiosInline" id="custom-radio-4" value="option1" checked>
+                    <label for="custom-radio-4"> Radio button </label>
+                  </div>
+                  <div class="radio-inline radio">
+                    <input type="radio" name="optionsRadiosInline" id="custom-radio-5" value="option1" checked>
+                    <label for="custom-radio-5"> Radio button </label>
+                  </div>
+                  <div class="radio radio-inline">
+                    <input type="radio" name="optionsRadiosInline" id="custom-radio-6" value="option1" checked>
+                    <label for="custom-radio-6"> Radio button </label>
+                  </div>
+                </div>
+                <!-- START CODE EXAMPLE -->
+                  <div class="collapse collapseCode">
+                    <div class="highlight">
+                      <h5>INLINE RADIO CODE</h5>
+                      <pre>
+                        <code class="html hljs xml">&lt;div class=&quot;input-group&quot;&gt;
+  &lt;label&gt;Inline Radios
+    &lt;span class=&quot;form-required&quot; title=&quot;This field is required.&quot;&gt;*&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;div class=&quot;radio-inline radio&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;optionsRadiosInline&quot; id=&quot;custom-radio-4&quot; value=&quot;option1&quot; checked=&quot;&quot;&gt;
+    &lt;label for=&quot;custom-radio-4&quot;&gt; Radio button &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;radio-inline radio&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;optionsRadiosInline&quot; id=&quot;custom-radio-5&quot; value=&quot;option1&quot; checked=&quot;&quot;&gt;
+    &lt;label for=&quot;custom-radio-5&quot;&gt; Radio button &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;radio radio-inline&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;optionsRadiosInline&quot; id=&quot;custom-radio-6&quot; value=&quot;option1&quot; checked=&quot;&quot;&gt;
+    &lt;label for=&quot;custom-radio-6&quot;&gt; Radio button &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+                      </pre>
+                    </div>
+                  </div>
+                <!-- END CODE EXAMPLE -->
+                <input type="submit" value="Submit" class="btn btn-md btn-red">
+              </form>
+            </div><!-- /.col-md-9 -->
+            <!-- Sidebar -->
+            <div id="sidebar_first" class="col-md-3 pull-left">
+              <div class="quick-links">
+                <h3>Sidebar Title</h3>
+                <ul>
+                  <li><a href="#">Sidebar Navigation 1</a></li>
+                  <li><a href="#">Sidebar Navigation 2</a></li>
+                  <li><a href="#">Sidebar Navigation 3</a></li>
+                  <li><a href="#">Sidebar Navigation 4</a></li>
+                  <li><a href="#">Sidebar Navigation 5</a></li>
+                  <li><a href="#">Sidebar Navigation 6</a></li>
+                  <li><a href="#">Sidebar Navigation 7</a></li>
+                  <li><a href="#">Sidebar Navigation 8</a></li>
+                </ul>
+              </div>
+            <!-- START CODE EXAMPLE -->
+              <p>&nbsp;</p>
+              <div class="collapseCode collapse">
+                <div class="highlight">
+                  <h5>SIDEBAR STRUCTURE</h5>
+                  <pre>
+                    <code class="html hljs xml">&lt;div id=&quot;sidebar_first&quot; class=&quot;col-md-3 pull-left&quot;&gt;
+  &lt;div class=&quot;quick-links&quot;&gt;
+    &lt;h3&gt;Sidebar Title&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sidebar Navigation 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sidebar Navigation 2&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sidebar Navigation 3&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sidebar Navigation 4&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sidebar Navigation 5&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sidebar Navigation 6&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sidebar Navigation 7&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sidebar Navigation 8&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+                  </pre>
+                </div>
+              </div>
+            <!-- END CODE EXAMPLE -->
+            </div>
 
-		          <p class="lead">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+              <!-- End Sidebar -->
+            </div>
+          </div>
+        </div><!-- /#content_main -->
+        <footer id="footer_site">
+          <div class="container">
+            <div id="footer_logo">
+              <a href="#">
+                <img src="../img/placeholder-logo.png" />
+              </a>
+            </div>
+            <div id="footer_menu">
+              <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+                <li class="last"><a href="#">Link 5</a></li>
+              </ul>
+            </div>
+            <div id="footer_copyright">
+              Forbes Building, Room 306   |   The University of Arizona   |   Tucson, AZ USA 85721-0036   |   Phone: 520-621-7621   |   Fax: 520-621-7196   |   Email: <a href="#">noreply@uits.arizona.edu</a>
+              Copyright 2014 © Arizona Board of Regents   |   <a href="#">Feedback</a>
+            </div>
+            <!-- START CODE EXAMPLE -->
 
-		          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="collapse collapseCode">
+              <div class="highlight">
+                <pre>
+                  <code class="html hljs xml">
+                    TEST TEsT
+                  </code>
+                </pre>
+              </div>
+            </div>
+            <!-- END CODE EXAMPLE -->
+          </div><!-- /.container -->
+        </footer>
+      </div><!-- /#l_page -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-		          <p><img src="../img/example-image.jpg" class="pull-left" style="margin: 0.5rem 2rem 0.5rem 0" />Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+      <script src="../js/scripts.js"></script>
+      <script src="../js/bootstrap.min.js"></script>
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
+      <!-- Hightlight.js used for Code examples, not part of catstrap -->
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+      <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
 
-		          <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et.</p>
-
-		          <p><a href="#">Link style</a></p>
-
-		          <p><a href="#" class="btn btn-lg btn-red">Button style</a><a href="#" class="btn btn-lg btn-blue" style="margin-left: 8px;">Button style</a></p>
-
-		          <p>&nbsp;</p>
-		          <h3>Paragraph Title</h3>
-		          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		          <ul class="triangle">
-		          	<li><a href="#">American Academy of Arts and Sciences</a> (14)</li>
-		          	<li><a href="#">Association of the Advancement of Science Fellows</a> (24)</li>
-		          	<li><a href="#">Fulbright Scholars - Council for International Exchange</a> (10)</li>
-		          	<li><a href="#">Guggenheim Fellowship Award Winners</a> (11)</li>
-		          	<li><a href="#">MacArthur Fellows Program</a> (7)</li>
-		          	<li><a href="#">National Academy of Education</a> (2)</li>
-		          	<li><a href="#">National Academy of Engineering</a> (15)</li>
-								<li><a href="#">National Academy of Sciences</a> (22)</li>
-								<li><a href="#">National Academy of Sciences Institute of Medicine</a> (4)</li>
-								<li><a href="#">Nobel Prize Winners</a> (3)</li>
-								<li><a href="#">Pulitzer Prize Winners</a> (2)</li>
-		          </ul>
-							<p>&nbsp;</p>
-		          <table class="table">
-		          	<thead>
-		          		<tr>
-		          			<th>Table Header</th>
-		          			<th>&nbsp;</th>
-		          			<th>&nbsp;</th>
-		          		</tr>
-		          	</thead>
-		          	<tbody>
-		          		<tr>
-		          			<td>J. Roger P. Angel</td>
-		          			<td>PhD</td>
-		          			<td>Director-Steward Observatory Mirror Laboratory</td>
-		          		</tr>
-		          		<tr>
-		          			<td>Julia E. Annas</td>
-		          			<td>PhD</td>
-		          			<td>Professor of Philosophy</td>
-		          		</tr>
-		          		<tr>
-		          			<td>W. David Arnett</td>
-		          			<td>PhD</td>
-		          			<td>Professor of Astronomy</td>
-		          		</tr>
-		          		<tr>
-		          			<td>Nicolaas Bloembergen</td>
-		          			<td>PhD</td>
-		          			<td>Professor of Optical Sciences</td>
-		          		</tr>
-		          		<tr>
-		          			<td>John G. Hildebrand</td>
-		          			<td>PhD</td>
-		          			<td>Professor of Astronomy</td>
-		          		</tr>
-		          	</tbody>
-		          </table>
-		          <p>&nbsp;</p>
-
-		          <form>
-							  <div class="form-group">
-							    <label for="exampleInputEmail1">Input Title</label>
-							    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Placeholder text">
-							  </div>
-							  <div class="form-group">
-							    <label for="exampleInputEmail1">Input Title</label>
-							    <textarea class="form-control" rows="5" placeholder="Placeholder text"></textarea>
-							  </div>
-							  <div class="checkbox">
-								  <label>
-								    <input type="checkbox" value="" id="custom-checkbox">
-								    Check box
-								  </label>
-								</div>
-								<div class="radio">
-								  <label>
-								    <input type="radio" name="optionsRadios" id="custom-radio" value="option1" checked>
-								    Radio button
-								  </label>
-								</div>
-								<input type="submit" value="Submit" class="btn btn-md btn-red">
-							</form>
-		        </div><!-- /.col-md-9 -->
-		        <!-- Sidebar -->
-		        <div id="sidebar_first" class="col-md-3 pull-left">
-		        	<div class="quick-links">
-		        		<h3>Sidebar Title</h2>
-		        			<ul>
-		        				<li><a href="#">Sidebar Navigation 1</a></li>
-		        				<li><a href="#">Sidebar Navigation 2</a></li>
-		        				<li><a href="#">Sidebar Navigation 3</a></li>
-		        				<li><a href="#">Sidebar Navigation 4</a></li>
-		        				<li><a href="#">Sidebar Navigation 5</a></li>
-		        				<li><a href="#">Sidebar Navigation 6</a></li>
-		        				<li><a href="#">Sidebar Navigation 7</a></li>
-		        				<li><a href="#">Sidebar Navigation 8</a></li>
-		        			</ul>
-		        	</div>
-		        </div>
-		        <!-- End Sidebar -->
-		      </div>
-		    </div>
-	  	</div><!-- /#content_main -->
-	  	<footer id="footer_site">
-	  		<div class="container">
-	  			<div id="footer_logo">
-	  				<a href="#">
-	  					<img src="../img/placeholder-logo.png" />
-	  				</a>
-	  			</div>
-	  			<div id="footer_menu">
-	  				<ul>
-	  					<li><a href="#">Link 1</a></li>
-	  					<li><a href="#">Link 2</a></li>
-	  					<li><a href="#">Link 3</a></li>
-	  					<li><a href="#">Link 4</a></li>
-	  					<li class="last"><a href="#">Link 5</a></li>
-	  				</ul>
-	  			</div>
-	  			<div id="footer_copyright">
-	  				Forbes Building, Room 306   |   The University of Arizona   |   Tucson, AZ USA 85721-0036   |   Phone: 520-621-7621   |   Fax: 520-621-7196   |   Email: <a href="#">noreply@uits.arizona.edu</a>
-Copyright 2014 © Arizona Board of Regents   |   <a href="#">Feedback</a>
-	  			</div>
-	  		</div><!-- /.container -->
-	  	</footer>
-  	</div><!-- /#l_page -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  </body>
+    </body>
 </html>
