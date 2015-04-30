@@ -1237,6 +1237,278 @@ fieldset[disabled] .btn-blue:active,
 fieldset[disabled] .btn-blue.active {
   background-color: #0C234B;
 }
+/* Additional Button Colors */
+.btn-cactus { 
+  color: #FFFFFF; 
+  background-color: #5C8727; 
+  border-color: #405E1B; 
+} 
+ 
+.btn-cactus:hover, 
+.btn-cactus:focus, 
+.btn-cactus:active, 
+.btn-cactus.active, 
+.open .dropdown-toggle.btn-cactus { 
+  color: #FFFFFF; 
+  background-color: #405E1B; 
+  border-color: #405E1B; 
+} 
+ 
+.btn-cactus:active, 
+.btn-cactus.active, 
+.open .dropdown-toggle.btn-cactus { 
+  background-image: none; 
+} 
+ 
+.btn-cactus.disabled, 
+.btn-cactus[disabled], 
+fieldset[disabled] .btn-cactus, 
+.btn-cactus.disabled:hover, 
+.btn-cactus[disabled]:hover, 
+fieldset[disabled] .btn-cactus:hover, 
+.btn-cactus.disabled:focus, 
+.btn-cactus[disabled]:focus, 
+fieldset[disabled] .btn-cactus:focus, 
+.btn-cactus.disabled:active, 
+.btn-cactus[disabled]:active, 
+fieldset[disabled] .btn-cactus:active, 
+.btn-cactus.disabled.active, 
+.btn-cactus[disabled].active, 
+fieldset[disabled] .btn-cactus.active { 
+  background-color: #5C8727; 
+  border-color: #405E1B; 
+} 
+ 
+.btn-cactus .badge { 
+  color: #5C8727; 
+  background-color: #FFFFFF; 
+}
+.btn-sky { 
+  color: #FFFFFF; 
+  background-color: #84D2E2; 
+  border-color: #5C939E; 
+} 
+ 
+.btn-sky:hover, 
+.btn-sky:focus, 
+.btn-sky:active, 
+.btn-sky.active, 
+.open .dropdown-toggle.btn-sky { 
+  color: #FFFFFF; 
+  background-color: #5C939E; 
+  border-color: #5C939E; 
+} 
+ 
+.btn-sky:active, 
+.btn-sky.active, 
+.open .dropdown-toggle.btn-sky { 
+  background-image: none; 
+} 
+ 
+.btn-sky.disabled, 
+.btn-sky[disabled], 
+fieldset[disabled] .btn-sky, 
+.btn-sky.disabled:hover, 
+.btn-sky[disabled]:hover, 
+fieldset[disabled] .btn-sky:hover, 
+.btn-sky.disabled:focus, 
+.btn-sky[disabled]:focus, 
+fieldset[disabled] .btn-sky:focus, 
+.btn-sky.disabled:active, 
+.btn-sky[disabled]:active, 
+fieldset[disabled] .btn-sky:active, 
+.btn-sky.disabled.active, 
+.btn-sky[disabled].active, 
+fieldset[disabled] .btn-sky.active { 
+  background-color: #84D2E2; 
+  border-color: #5C939E; 
+} 
+ 
+.btn-sky .badge { 
+  color: #84D2E2; 
+  background-color: #FFFFFF; 
+}
+.btn-river { 
+  color: #ffffff; 
+  background-color: #076873; 
+  border-color: #054950; 
+} 
+ 
+.btn-river:hover, 
+.btn-river:focus, 
+.btn-river:active, 
+.btn-river.active, 
+.open .dropdown-toggle.btn-river { 
+  color: #ffffff; 
+  background-color: #054950; 
+  border-color: #054950; 
+} 
+ 
+.btn-river:active, 
+.btn-river.active, 
+.open .dropdown-toggle.btn-river { 
+  background-image: none; 
+} 
+ 
+.btn-river.disabled, 
+.btn-river[disabled], 
+fieldset[disabled] .btn-river, 
+.btn-river.disabled:hover, 
+.btn-river[disabled]:hover, 
+fieldset[disabled] .btn-river:hover, 
+.btn-river.disabled:focus, 
+.btn-river[disabled]:focus, 
+fieldset[disabled] .btn-river:focus, 
+.btn-river.disabled:active, 
+.btn-river[disabled]:active, 
+fieldset[disabled] .btn-river:active, 
+.btn-river.disabled.active, 
+.btn-river[disabled].active, 
+fieldset[disabled] .btn-river.active { 
+  background-color: #076873; 
+  border-color: #054950; 
+} 
+ 
+.btn-river .badge { 
+  color: #076873; 
+  background-color: #ffffff; 
+}
+.btn-sand { 
+  color: #ffffff; 
+  background-color: #F19E1F; 
+  border-color: #A86E16; 
+} 
+ 
+.btn-sand:hover, 
+.btn-sand:focus, 
+.btn-sand:active, 
+.btn-sand.active, 
+.open .dropdown-toggle.btn-sand { 
+  color: #ffffff; 
+  background-color: #a86e16; 
+  border-color: #A86E16; 
+} 
+ 
+.btn-sand:active, 
+.btn-sand.active, 
+.open .dropdown-toggle.btn-sand { 
+  background-image: none; 
+} 
+ 
+.btn-sand.disabled, 
+.btn-sand[disabled], 
+fieldset[disabled] .btn-sand, 
+.btn-sand.disabled:hover, 
+.btn-sand[disabled]:hover, 
+fieldset[disabled] .btn-sand:hover, 
+.btn-sand.disabled:focus, 
+.btn-sand[disabled]:focus, 
+fieldset[disabled] .btn-sand:focus, 
+.btn-sand.disabled:active, 
+.btn-sand[disabled]:active, 
+fieldset[disabled] .btn-sand:active, 
+.btn-sand.disabled.active, 
+.btn-sand[disabled].active, 
+fieldset[disabled] .btn-sand.active { 
+  background-color: #F19E1F; 
+  border-color: #A86E16; 
+} 
+ 
+.btn-sand .badge { 
+  color: #F19E1F; 
+  background-color: #ffffff; 
+}
+.btn-mesa { 
+  color: #ffffff; 
+  background-color: #B75527; 
+  border-color: #803B1B; 
+} 
+ 
+.btn-mesa:hover, 
+.btn-mesa:focus, 
+.btn-mesa:active, 
+.btn-mesa.active, 
+.open .dropdown-toggle.btn-mesa { 
+  color: #ffffff; 
+  background-color: #803B1B; 
+  border-color: #803B1B; 
+} 
+ 
+.btn-mesa:active, 
+.btn-mesa.active, 
+.open .dropdown-toggle.btn-mesa { 
+  background-image: none; 
+} 
+ 
+.btn-mesa.disabled, 
+.btn-mesa[disabled], 
+fieldset[disabled] .btn-mesa, 
+.btn-mesa.disabled:hover, 
+.btn-mesa[disabled]:hover, 
+fieldset[disabled] .btn-mesa:hover, 
+.btn-mesa.disabled:focus, 
+.btn-mesa[disabled]:focus, 
+fieldset[disabled] .btn-mesa:focus, 
+.btn-mesa.disabled:active, 
+.btn-mesa[disabled]:active, 
+fieldset[disabled] .btn-mesa:active, 
+.btn-mesa.disabled.active, 
+.btn-mesa[disabled].active, 
+fieldset[disabled] .btn-mesa.active { 
+  background-color: #B75527; 
+  border-color: #803B1B; 
+} 
+ 
+.btn-mesa .badge { 
+  color: #B75527; 
+  background-color: #ffffff; 
+}
+.btn-brick { 
+  color: #FFFFFF; 
+  background-color: #4A3027; 
+  border-color: #34221B; 
+} 
+ 
+.btn-brick:hover, 
+.btn-brick:focus, 
+.btn-brick:active, 
+.btn-brick.active, 
+.open .dropdown-toggle.btn-brick { 
+  color: #FFFFFF; 
+  background-color: #34221b; 
+  border-color: #34221B; 
+} 
+ 
+.btn-brick:active, 
+.btn-brick.active, 
+.open .dropdown-toggle.btn-brick { 
+  background-image: none; 
+} 
+ 
+.btn-brick.disabled, 
+.btn-brick[disabled], 
+fieldset[disabled] .btn-brick, 
+.btn-brick.disabled:hover, 
+.btn-brick[disabled]:hover, 
+fieldset[disabled] .btn-brick:hover, 
+.btn-brick.disabled:focus, 
+.btn-brick[disabled]:focus, 
+fieldset[disabled] .btn-brick:focus, 
+.btn-brick.disabled:active, 
+.btn-brick[disabled]:active, 
+fieldset[disabled] .btn-brick:active, 
+.btn-brick.disabled.active, 
+.btn-brick[disabled].active, 
+fieldset[disabled] .btn-brick.active { 
+  background-color: #4A3027; 
+  border-color: #34221B; 
+} 
+ 
+.btn-brick .badge { 
+  color: #4A3027; 
+  background-color: #FFFFFF; 
+}
+/* End Additional Button Colors*/
 
 .btn-lg,
 .btn-group-lg > .btn {
