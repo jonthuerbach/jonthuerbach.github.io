@@ -1277,11 +1277,6 @@ fieldset[disabled] .btn-cactus:active,
 fieldset[disabled] .btn-cactus.active { 
   background-color: #5C8727; 
   border-color: #405E1B; 
-} 
- 
-.btn-cactus .badge { 
-  color: #5C8727; 
-  background-color: #FFFFFF; 
 }
 .btn-sky { 
   color: #FFFFFF; 
@@ -1322,11 +1317,6 @@ fieldset[disabled] .btn-sky:active,
 fieldset[disabled] .btn-sky.active { 
   background-color: #84D2E2; 
   border-color: #5C939E; 
-} 
- 
-.btn-sky .badge { 
-  color: #84D2E2; 
-  background-color: #FFFFFF; 
 }
 .btn-river { 
   color: #ffffff; 
@@ -1367,11 +1357,6 @@ fieldset[disabled] .btn-river:active,
 fieldset[disabled] .btn-river.active { 
   background-color: #076873; 
   border-color: #054950; 
-} 
- 
-.btn-river .badge { 
-  color: #076873; 
-  background-color: #ffffff; 
 }
 .btn-sand { 
   color: #ffffff; 
@@ -1412,11 +1397,6 @@ fieldset[disabled] .btn-sand:active,
 fieldset[disabled] .btn-sand.active { 
   background-color: #F19E1F; 
   border-color: #A86E16; 
-} 
- 
-.btn-sand .badge { 
-  color: #F19E1F; 
-  background-color: #ffffff; 
 }
 .btn-mesa { 
   color: #ffffff; 
@@ -1457,11 +1437,6 @@ fieldset[disabled] .btn-mesa:active,
 fieldset[disabled] .btn-mesa.active { 
   background-color: #B75527; 
   border-color: #803B1B; 
-} 
- 
-.btn-mesa .badge { 
-  color: #B75527; 
-  background-color: #ffffff; 
 }
 .btn-brick { 
   color: #FFFFFF; 
@@ -1503,11 +1478,6 @@ fieldset[disabled] .btn-brick.active {
   background-color: #4A3027; 
   border-color: #34221B; 
 } 
- 
-.btn-brick .badge { 
-  color: #4A3027; 
-  background-color: #FFFFFF; 
-}
 /* End Additional Button Colors*/
 
 .btn-lg,
