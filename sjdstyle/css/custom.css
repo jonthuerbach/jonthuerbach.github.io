@@ -35,7 +35,7 @@ a {
   background-size: cover;
   transition: 0s linear;
   transition-property: background-position;
-  height: 800px;
+  /*height: 800px;*/
   width: 100%;
   padding-top: 100px;
 }
@@ -44,3 +44,14 @@ a {
   font-weight: 700;
   color: #fff;
 }
+
+/* Projects */
+.projects-block {
+  min-height: 400px;
+  background-color: #eee;
+}
+
+
+
+
+/* Contact */
