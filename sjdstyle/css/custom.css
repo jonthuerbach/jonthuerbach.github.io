@@ -1,0 +1,46 @@
+body {
+  /*font-family: 'Playfair Display', serif;*/
+  font-family: 'Lato', sans-serif;
+  min-height: 2000px;
+}
+a {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+/* Navigation */
+#navbar-sjd {
+  background-color: #fff;
+  border: 0;
+  -webkit-box-shadow: -2px 7px 61px -23px rgba(0, 0, 0, 0.3);
+    -khtml-box-shadow: -2px 7px 61px -23px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: -2px 7px 61px -23px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: -2px 7px 61px -23px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: -2px 7px 61px -23px rgba(0, 0, 0, 0.3);
+    box-shadow: -2px 7px 61px -23px rgba(0, 0, 0, 0.3);
+}
+#navbar-sjd .navbar-nav > li > a,
+#navbar-sjd .navbar-brand {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* Hero */
+.hero-block {
+  background: url('http://lorempixel.com/1920/1080');
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0s linear;
+  transition-property: background-position;
+  height: 800px;
+  width: 100%;
+  padding-top: 100px;
+}
+.hero-block h2 {
+  font-size: 3em;
+  font-weight: 700;
+  color: #fff;
+}
