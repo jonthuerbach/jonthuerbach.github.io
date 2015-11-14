@@ -30,12 +30,11 @@ a {
 
 /* Hero */
 .hero-block {
-  background: url('http://lorempixel.com/1920/1080');
+  background: url('../img/DSC_0340.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   transition: 0s linear;
   transition-property: background-position;
-  /*height: 800px;*/
   width: 100%;
   padding-top: 100px;
 }
