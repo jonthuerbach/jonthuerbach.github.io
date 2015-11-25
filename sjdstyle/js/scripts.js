@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	
+
 	// OFFSET FIXED MENU
 	$('body').css('padding-top', function() {
     return $('#navbar-sjd').innerHeight();

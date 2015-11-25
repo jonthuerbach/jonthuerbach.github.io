@@ -11,6 +11,9 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.6/css/lightgallery.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+
+    <link rel='stylesheet' href='unitegallery/themes/default/ug-theme-default.css' type='text/css' />
+    <link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -39,7 +42,7 @@
               <li><a href="#link-contact"><span class="fa fa-phone"></span>&nbsp;Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"><span class="fa fa-user"></span>&nbsp;Client Login</a></li>
+              <li><a href="#!" data-toggle="modal" data-target="#clientLogin"><span class="fa fa-user"></span>&nbsp;Client Login</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -55,8 +58,30 @@
     <div id="link-projects" class="projects-block">
       <div class="container">
         <h3 class="page-header">Projects</h3>
-
-      </div>
+        <p>hi</p>
+        <div class="row">
+          <div class="col-sm-4">
+            <p>Column</p>
+          </div>
+          <div class="col-sm-4">
+            <p>Column</p>
+          </div>
+          <div class="col-sm-4">
+            <p>Column</p>
+          </div>
+        </div>
+        <div id="gallery" style="display:none;">
+    
+          <img alt="Image 1 Title" src="thumbs/image1.jpg"
+            data-image="images/image1.jpg"
+            data-description="Image 1 Description">
+          
+          <img alt="Image 2 Title" src="thumbs/image2.jpg"
+            data-image="images/image02.jpg"
+            data-description="Image 2 Description">
+        
+        </div>
+      </div><!-- /.container -->
     </div>
 
     <div id="link-contact" class="contact-block">
@@ -66,13 +91,63 @@
     </div>
 
     <div class="footer-block">
+      <div class="container">
+        <h5>Copyright &copy;2015 SJD Style, LLC.</h5>
+      </div>
+    </div>
 
-  
+    <!-- Modal -->
+    <div class="modal fade" id="clientLogin" tabindex="-1" role="dialog" aria-labelledby="Client Login">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel"><span class="fa fa-user"></span>&nbsp;Client Login</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Remember me
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-primary">
+                    <span class="fa fa-sign-in"></span>&nbsp;Login
+                  </button>
+                  <button type="submit" class="btn btn-default" data-dismiss="modal">
+                    <span class="fa fa-times"></span>&nbsp;Cancel
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.6/js/lg-thumbnail.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.6/js/lg-fullscreen.min.js"></script>
+
+
     <script src="js/scripts.js"></script>
   </body>
 </html>
