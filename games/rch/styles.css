@@ -22,3 +22,15 @@ h3.page-header.game-header {
     box-shadow: none;
     border-color: #ddd;
 }
+
+
+
+/* Responsive Styles */
+.fa {
+	display: none;
+}
+@media (min-width: 400px) {
+	.fa {
+		display: inline-block;
+	}
+}
