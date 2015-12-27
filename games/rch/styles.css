@@ -27,7 +27,7 @@ h3.page-header.game-header {
 
 /* Responsive Styles */
 .fa {
-	display: none;
+	display: inline-block;
 }
 @media (min-width: 400px) {
 	.fa {
