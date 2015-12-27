@@ -1,0 +1,15 @@
+h3.score {
+  margin: 0.5rem 0;
+}
+.tab-pane {
+  padding: 1em;
+  background-color: #fff;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  height: 20em;
+  overflow-y: auto;
+}
+h3.tab-heading {
+  margin-top: 0;
+}
