@@ -66,7 +66,6 @@ $( document ).ready(function() {
   //Define Game Object
   var Game = {
     isNewPlayer: false,
-    timer: false,
     food: { current: 0, total: 250, dps: 0, inc: 1 },
     wood: { current: 0, total: 250, dps: 0, inc: 1 },
     rock: { current: 0, total: 250, dps: 0, inc: 1 },
@@ -81,7 +80,6 @@ $( document ).ready(function() {
     gameCheck();
     // newPlayer();
     refreshView();
-    gameTimer();
   };
 
   // Game Refresh View
@@ -123,8 +121,6 @@ $( document ).ready(function() {
       Game.workers++;
       Game.workersAvailable++;
       Game.food.current -= 20;
-      Game.timer = true;
-      gameTimer();
       refreshView();
     }
   });
@@ -132,23 +128,17 @@ $( document ).ready(function() {
   // Button Disabled and DPS Checker
   setInterval(function() {
     btnCreateWorker.prop('disabled', Game.food.current <= 19);
-
   }, 100);
+
+  // Main Game Clock
+  setInterval(function() {
+    if (Game.workers > 0 && Game.food.current > 0) {
+      Game.food.current -= 1;
+      refreshView();
+    }
+  }, 1000);
 
   // Init the Game
   init();
-
-  function gameTimer() {
-    if (Game.timer === true) {
-      setInterval(function() {
-        if (Game.food.current > 0) {
-          Game.food.current -= (1 * Game.food.inc);
-        }
-
-        refreshView();
-      }, 1000);
-    }
-  }
-  console.log(Game.timer);
 
 });
