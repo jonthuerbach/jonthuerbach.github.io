@@ -18,12 +18,13 @@ $( document ).ready(function() {
     if (r === true) {
       localStorage.removeItem("save");
       Game.isNewPlayer = true;
+      Game.timer = false;
       Game.food.current = 0;
       Game.wood.current = 0;
       Game.rock.current = 0;
       Game.workers = 0;
       Game.workersIncrement = 1;
-      Game.workersUnemployed = 0;
+      Game.workersAvailable = 0;
       Game.workersFarmer = 0;
       refreshView();
     }
@@ -60,17 +61,18 @@ $( document ).ready(function() {
       dispRock = $('#display-rock'),
       dispRockTotal = $('#display-rock-total'),
       dispRockDps = $('#display-rock-dps'),
-      dispWorkersUnemployed = $('#display-workers-unemployed');
+      dispWorkersAvailable = $('#display-workers-available');
 
   //Define Game Object
   var Game = {
     isNewPlayer: false,
+    timer: false,
     food: { current: 0, total: 250, dps: 0, inc: 1 },
     wood: { current: 0, total: 250, dps: 0, inc: 1 },
     rock: { current: 0, total: 250, dps: 0, inc: 1 },
     workers: 0,
     workersIncrement: 1,
-    workersUnemployed: 0,
+    workersAvailable: 0,
     workersFarmer: 0
   }
 
@@ -79,6 +81,7 @@ $( document ).ready(function() {
     gameCheck();
     // newPlayer();
     refreshView();
+    gameTimer();
   };
 
   // Game Refresh View
@@ -92,7 +95,7 @@ $( document ).ready(function() {
     dispRock.text(Game.rock.current);
     dispRockTotal.text(Game.rock.total);
     dispRockDps.text(Game.rock.dps);
-    dispWorkersUnemployed.text(Game.workersUnemployed);
+    dispWorkersAvailable.text(Game.workersAvailable);
   };
 
   // Button Functions
@@ -112,14 +115,16 @@ $( document ).ready(function() {
     refreshView();
   });
   btnGetRock.click(function() {
-    Game.rock++;
+    Game.rock.current++;
     refreshView();
   });
   btnCreateWorker.click(function() {
     if (Game.food.current >= 20) {
       Game.workers++;
-      Game.workersUnemployed++;
+      Game.workersAvailable++;
       Game.food.current -= 20;
+      Game.timer = true;
+      gameTimer();
       refreshView();
     }
   });
@@ -132,5 +137,18 @@ $( document ).ready(function() {
 
   // Init the Game
   init();
+
+  function gameTimer() {
+    if (Game.timer === true) {
+      setInterval(function() {
+        if (Game.food.current > 0) {
+          Game.food.current -= (1 * Game.food.inc);
+        }
+
+        refreshView();
+      }, 1000);
+    }
+  }
+  console.log(Game.timer);
 
 });
