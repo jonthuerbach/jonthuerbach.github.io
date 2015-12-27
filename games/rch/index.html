@@ -53,37 +53,42 @@
     </nav>
 
     <!-- Main Game Content -->
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <!-- <div class="col-sm-4">
           // test
         </div> -->
         <div class="col-sm-6">
           <div class="well well-sm">
-            <h2>
-              <div id="btn-get-food" class="btn btn-success btn-lg">
-                <span class="fa fa-cutlery fa-fw"></span>&nbsp;
-                Get Food
-              </div>&nbsp;
-              <span id="display-food"></span>/<small><span id="display-food-total"></span></small>
-              <span class="badge"><span id="display-food-dps"></span>/s</span>
-            </h2>
-            <h2>
-              <div id="btn-get-wood" class="btn btn-success btn-lg">
-                <span class="fa fa-tree fa-fw"></span>&nbsp;
-                Get Wood
-              </div>&nbsp;
-              <span id="display-wood"></span>/<small><span id="display-wood-total"></span></small>
-              <span class="badge"><span id="display-wood-dps"></span>/s</span>
-            </h2>
-            <h2>
-              <div id="btn-get-rock" class="btn btn-success btn-lg">
-                <span class="fa fa-spoon fa-fw"></span>&nbsp;
-                Get Rock
-              </div>&nbsp;
-              <span id="display-rock"></span>/<small><span id="display-rock-total"></span></small>
-              <span class="badge"><span id="display-rock-dps"></span>/s</span>
-            </h2>
+            <div class="panel">
+              <div class="panel-body">
+                <h3 class="page-header game-header">Events</h3>
+                <h2>
+                  <div id="btn-get-food" class="btn btn-primary btn-lg">
+                    <span class="fa fa-cutlery fa-fw"></span>&nbsp;
+                    Get Food
+                  </div>&nbsp;
+                  <span id="display-food"></span>/<small><span id="display-food-total"></span></small>
+                  <span class="badge"><span id="display-food-dps"></span>/s</span>
+                </h2>
+                <h2>
+                  <div id="btn-get-wood" class="btn btn-primary btn-lg">
+                    <span class="fa fa-tree fa-fw"></span>&nbsp;
+                    Get Wood
+                  </div>&nbsp;
+                  <span id="display-wood"></span>/<small><span id="display-wood-total"></span></small>
+                  <span class="badge"><span id="display-wood-dps"></span>/s</span>
+                </h2>
+                <h2>
+                  <div id="btn-get-rock" class="btn btn-primary btn-lg">
+                    <span class="fa fa-spoon fa-fw"></span>&nbsp;
+                    Get Rock
+                  </div>&nbsp;
+                  <span id="display-rock"></span>/<small><span id="display-rock-total"></span></small>
+                  <span class="badge"><span id="display-rock-dps"></span>/s</span>
+                </h2>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-sm-6">
@@ -97,7 +102,7 @@
       <!-- Tab panes -->
       <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="tab-population">
-          <h3 class="tab-heading">Population & Jobs</h3>
+          <h3 class="page-header game-header">Population & Jobs</h3>
           <p><button class="btn btn-sm btn-default">Increment: x1</button></p>
           <p>
             <button id="btn-create-worker" class="btn btn-primary btn-lg">Create Worker&nbsp;<span class="badge">x1</span></button>
@@ -107,7 +112,7 @@
           <h4>Available Workers: <span id="display-workers-unemployed">0</span></h4>
         </div>
         <div role="tabpanel" class="tab-pane" id="tab-events">
-          <h3 class="tab-heading">Events</h3>
+          <h3 class="page-header game-header">Events</h3>
         </div>
         <div role="tabpanel" class="tab-pane" id="messages">...</div>
         <div role="tabpanel" class="tab-pane" id="settings">...</div>

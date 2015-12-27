@@ -2,14 +2,23 @@ h3.score {
   margin: 0.5rem 0;
 }
 .tab-pane {
-  padding: 1em;
+  padding: 1rem;
   background-color: #fff;
   border-left: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   border-right: 1px solid #ddd;
-  height: 20em;
+  height: 40rem;
   overflow-y: auto;
 }
-h3.tab-heading {
+h3.page-header.game-header {
   margin-top: 0;
+}
+.panel {
+    margin-bottom: 0;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #ddd;
 }
