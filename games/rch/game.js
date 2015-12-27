@@ -50,6 +50,8 @@ $( document ).ready(function() {
       btnGetWood = $('#btn-get-wood'),
       btnGetRock = $('#btn-get-rock'),
       btnCreateWorker = $('#btn-create-worker'),
+      btnFarmersDec = $('#btn-farmers-dec'),
+      btnFarmersInc = $('#btn-farmers-inc'),
       
       // Display
       dispFood = $('#display-food'),
@@ -124,10 +126,16 @@ $( document ).ready(function() {
       refreshView();
     }
   });
+  btnFarmersInc.click(function() {
+
+  });
+
 
   // Button Disabled and DPS Checker
   setInterval(function() {
     btnCreateWorker.prop('disabled', Game.food.current <= 19);
+    btnFarmersInc.prop('disabled', Game.workersAvailable === 0);
+    btnFarmersDec.prop('disabled', Game.workersAvailable === 0);
   }, 100);
 
   // Main Game Clock
@@ -136,6 +144,7 @@ $( document ).ready(function() {
       Game.food.current -= 1;
       refreshView();
     }
+    
   }, 1000);
 
   // Init the Game
