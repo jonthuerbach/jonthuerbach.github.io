@@ -1,0 +1,12 @@
+.well h1 {
+  margin: 0 0 10px 0;
+}
+#p1-message-container,
+#p2-message-container,
+#battle-container {
+  display: none;
+}
+#btn-battle {
+  font-size: 28px;
+  padding: 16px 24px;
+}
