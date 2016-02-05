@@ -13,9 +13,12 @@ jQuery(document).ready(function($) {
       if (error) {
         console.log("Login Failed!", error);
       } else {
-        console.log(authData.google.profileImageURL);
         dUsername.text(authData.google.displayName);
+        console.log(authData.google.email);
       }
+    }, {
+      remember: "default",
+      scope: "email"
     });
   });
   dUsername.text(authData.google.displayName);
