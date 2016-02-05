@@ -7,8 +7,8 @@ jQuery(document).ready(function($) {
       dProfileImage = $("#d-profile-image"),
       btnLogin = $("#btn-login");
 
-  // Buttons
-  btnLogin.click(function() {
+  // Functions
+  function authenticateUser() {
     ref.authWithOAuthPopup("google", function(error, authData) {
       if (error) {
         console.log("Login Failed!", error);
@@ -20,7 +20,12 @@ jQuery(document).ready(function($) {
       remember: "default",
       scope: "email"
     });
-  });
-  dUsername.text(authData.google.displayName);
-  console.log("ready");
+    dUsername.text(authData.google.displayName);
+    console.log("ready");
+  }
+
+  // Buttons
+  btnLogin.click(function() {
+    
 });  
+
