@@ -19,5 +19,5 @@ jQuery(document).ready(function($) {
     });
   });
   dUsername.text(authData.google.displayName);
+  console.log("ready");
 });  
-  
