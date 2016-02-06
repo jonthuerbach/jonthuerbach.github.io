@@ -1,31 +1,28 @@
 jQuery(document).ready(function($) {
-  // Firebase
-  var ref = new Firebase("https://rpg-game-thingy.firebaseio.com/");
+  
+  // Game Object
+  var Game = {
+    foo: "bar"
+  };
 
   // Global Variables
-  var dUsername = $("#d-username"),
-      dProfileImage = $("#d-profile-image"),
-      btnLogin = $("#btn-login");
+  var btnLogin = $("#btn-login");
 
-  // Functions
-  function authenticateUser() {
-    ref.authWithOAuthPopup("google", function(error, authData) {
-      if (error) {
-        console.log("Login Failed!", error);
-      } else {
-        dUsername.text(authData.google.displayName);
-        console.log(authData.google.email);
-      }
-    }, {
-      remember: "default",
-      scope: "email"
-    });
-    dUsername.text(authData.google.displayName);
-    console.log("ready");
-  }
+  // Firebase
+  var ref = new Firebase("https://jon-rpg-game.firebaseio.com/");
+
 
   // Buttons
   btnLogin.click(function() {
-    
-});  
+    ref.authWithOAuthPopup("facebook", function(error) {
+      if (error) {
+        console.log("Login Failed!", error);
+      } else {
+        // We'll never get here, as the page will redirect on success.
+      }
+    });
+  });
 
+  console.log(ref);
+  
+});
