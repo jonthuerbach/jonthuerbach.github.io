@@ -38,8 +38,34 @@
        }(document, 'script', 'facebook-jssdk'));
     </script>
 
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">RPG Game</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Save</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
     <div class="container">
-      <button id="btn-login" class="btn btn-primary btn-lg">Sign In</button>
+      <button id="btn-login" class="btn btn-primary btn-lg">
+        <span class="fa fa-facebook-official fa-fw"></span>
+        Sign in with Facebook
+      </button>
+      <button id="btn-logout" class="btn btn-info btn-lg">
+        <span class="fa fa-sign-out"></span>
+        Sign Out
+      </button>
     </div>
 
     <!-- Scripts -->
