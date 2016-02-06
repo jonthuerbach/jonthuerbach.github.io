@@ -13,8 +13,14 @@ jQuery(document).ready(function($) {
   function authDataCallback(authData) {
     if (authData) {
       console.log("User " + authData.uid + " is logged in with " + authData.provider);
+      btnLogin.fadeOut("fast", function() {
+        btnLogout.fadeIn("fast");
+      });
     } else {
       console.log("User is logged out");
+      btnLogout.fadeOut("fast", function() {
+        btnLogin.fadeIn("fast");
+      });
     }
   }
 
