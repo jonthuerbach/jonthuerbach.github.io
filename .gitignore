@@ -35,6 +35,7 @@ ehthumbs.db
 
 # Folder config file
 Desktop.ini
+.DS_Store
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
