@@ -1,0 +1,15 @@
+<div class="jumbotron jumbotron-home text-center" ng-hide="authData">
+  <h1>Family Manager</h1>
+  <p class="lead">
+    The easiest way to manage your family's bidness.
+  </p>
+  <p>
+    <button class="btn btn-primary btn-lg" ng-click="auth.$authWithOAuthRedirect('facebook')">
+      <span class="fa fa-facebook-official fa-fw"></span>
+      Sign In with Facebook
+    </button>
+  </p>
+</div>
+<div class="dashboard" ng-show="authData">
+  <h1 class="page-header">Dashboard</h1>
+</div>
