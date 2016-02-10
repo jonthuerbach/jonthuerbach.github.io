@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name familyAppApp.controller:MainCtrl
+ * @name familyManagerApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the familyAppApp
+ * Controller of the familyManagerApp
  */
-angular.module('familyAppApp')
+angular.module('familyManagerApp')
   .controller('MainCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
