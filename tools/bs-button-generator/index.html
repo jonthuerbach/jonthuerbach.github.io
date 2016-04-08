@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html ng-app="buttonGenerator" ng-controller="MainCtrl">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 3 Custom Button Generator</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      .{{customBtn.name}} {
+        color: #fff;
+        background-color: {{generatedValues.btnHex}};
+        border-color: {{generatedValues.btnHexBorder}};
+      }
+      .{{customBtn.name}}:focus,
+      .{{customBtn.name}}.focus {
+        color: #fff;
+        background-color: {{generatedValues.btnHexHover}};
+        border-color: #{{generatedValues.btnHexFocusBorder}};
+      }
+      .{{customBtn.name}}:hover {
+        color: #fff;
+        background-color: {{generatedValues.btnHexHover}};
+        border-color: {{generatedValues.btnHexHoverBorder}};
+      }
+      .{{customBtn.name}}:active,
+      .{{customBtn.name}}.active,
+      .open > .dropdown-toggle.{{customBtn.name}} {
+        color: #fff;
+        background-color: {{generatedValues.btnHexHover}};
+        border-color: {{generatedValues.btnHexHoverBorder}};
+      }
+      .{{customBtn.name}}:active:hover,
+      .{{customBtn.name}}.active:hover,
+      .open > .dropdown-toggle.{{customBtn.name}}:hover,
+      .{{customBtn.name}}:active:focus,
+      .{{customBtn.name}}.active:focus,
+      .open > .dropdown-toggle.{{customBtn.name}}:focus,
+      .{{customBtn.name}}:active.focus,
+      .{{customBtn.name}}.active.focus,
+      .open > .dropdown-toggle.{{customBtn.name}}.focus {
+        color: #fff;
+        background-color: {{generatedValues.btnHexHoverBorder}};
+        border-color: {{generatedValues.btnHexFocusBorder}};
+      }
+      .{{customBtn.name}}:active,
+      .{{customBtn.name}}.active,
+      .open > .dropdown-toggle.{{customBtn.name}} {
+        background-image: none;
+      }
+      .{{customBtn.name}}.disabled:hover,
+      .{{customBtn.name}}[disabled]:hover,
+      fieldset[disabled] .{{customBtn.name}}:hover,
+      .{{customBtn.name}}.disabled:focus,
+      .{{customBtn.name}}[disabled]:focus,
+      fieldset[disabled] .{{customBtn.name}}:focus,
+      .{{customBtn.name}}.disabled.focus,
+      .{{customBtn.name}}[disabled].focus,
+      fieldset[disabled] .{{customBtn.name}}.focus {
+        background-color: {{generatedValues.btnHex}};
+        border-color: {{generatedValues.btnHexBorder}};
+      }
+      .{{customBtn.name}} .badge {
+        color: {{generatedValues.btnHex}};
+        background-color: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="page-header">Bootstrap 3 Custom Button Generator</h1>
+      <p class="lead text-muted">First, type in your custom Bootstrap button's class. Then, type in a hex number for the base color you want. Sit back and let the app do the rest!</p>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="well well-white text-center">
+            <h2 class="page-header">Create the Button</h2>
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="form-group">
+                  <label for="form-btn-name">Button Class Name</label>
+                  <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">.</span>
+                    <input type="text" ng-model="customBtn.name" value="{{customBtn.name}}" placeholder="Example: 'btn-custom'" class="form-control" id="form-btn-name" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="form-group">
+                  <label for="form-btn-hex">Base Hex Color</label>
+                  <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">#</span>
+                    <input type="text" ng-model="customBtn.baseHex" placeholder="Example: '408AA0'" class="form-control" id="form-btn-hex" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>
+              <button class="btn btn-primary btn-lg btn-generate" ng-click="updateHex()" ng-disabled="customBtn.baseHex.length !== 6">Generate Button</button>
+            </p>
+            <div class="well">
+              <h3 class="text-muted">Button Preview</h3>
+              <button class="btn {{customBtn.name}} btn-lg">Normal</button>
+              <button class="btn {{customBtn.name}} btn-lg active">Active</button>
+              <button disabled="" class="btn {{customBtn.name}} btn-lg">Disabled</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="well well-white text-center">
+            <h2 class="page-header">
+              Grab the Code
+            </h2>
+            <textarea id="get-code" rows="10" class="form-control" ng-click="SelectAll('get-code')">.{{customBtn.name}} {
+  color: #FFF;
+  background-color: {{generatedValues.btnHex}};
+  border-color: {{generatedValues.btnHexBorder}};
+}
+.{{customBtn.name}}:focus,
+.{{customBtn.name}}.focus {
+  color: #FFF;
+  background-color: {{generatedValues.btnHexHover}};
+  border-color: {{generatedValues.btnHexFocusBorder}};
+}
+.{{customBtn.name}}:hover {
+  color: #FFF;
+  background-color: {{generatedValues.btnHexHover}};
+  border-color: {{generatedValues.btnHexHoverBorder}};
+}
+.{{customBtn.name}}:active,
+.{{customBtn.name}}.active,
+.open > .dropdown-toggle.{{customBtn.name}} {
+  color: #FFF;
+  background-color: {{generatedValues.btnHexHover}};
+  border-color: {{generatedValues.btnHexHoverBorder}};
+}
+.{{customBtn.name}}:active:hover,
+.{{customBtn.name}}.active:hover,
+.open > .dropdown-toggle.{{customBtn.name}}:hover,
+.{{customBtn.name}}:active:focus,
+.{{customBtn.name}}.active:focus,
+.open > .dropdown-toggle.{{customBtn.name}}:focus,
+.{{customBtn.name}}:active.focus,
+.{{customBtn.name}}.active.focus,
+.open > .dropdown-toggle.{{customBtn.name}}.focus {
+  color: #FFF;
+  background-color: {{generatedValues.btnHexHoverBorder}};
+  border-color: {{generatedValues.btnHexFocusBorder}};
+}
+.{{customBtn.name}}:active,
+.{{customBtn.name}}.active,
+.open > .dropdown-toggle.{{customBtn.name}} {
+  background-image: none;
+}
+.{{customBtn.name}}.disabled:hover,
+.{{customBtn.name}}[disabled]:hover,
+fieldset[disabled] .{{customBtn.name}}:hover,
+.{{customBtn.name}}.disabled:focus,
+.{{customBtn.name}}[disabled]:focus,
+fieldset[disabled] .{{customBtn.name}}:focus,
+.{{customBtn.name}}.disabled.focus,
+.{{customBtn.name}}[disabled].focus,
+fieldset[disabled] .{{customBtn.name}}.focus {
+  background-color: {{generatedValues.btnHex}};
+  border-color: {{generatedValues.btnHexBorder}};
+}
+.{{customBtn.name}} .badge {
+  color: {{generatedValues.btnHex}};
+  background-color: #FFF;
+}</textarea>
+            <button class="btn btn-primary btn-lg" ng-click="SelectAll('get-code')">Select All</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-animate.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+
+</html>
