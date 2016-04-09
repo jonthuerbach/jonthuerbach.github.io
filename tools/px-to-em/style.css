@@ -1,0 +1,33 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: -0.03em;
+}
+.form-fixed-width {
+  width: 120px;
+  margin: 0 auto 15px;
+}
+.then-choose {
+  position: relative;
+  margin: 10px 0;
+}
+.then-choose::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #DDD;
+  left: 0;
+  top: 9px;
+  position: absolute;
+}
+.then-choose span {
+  position: relative;
+  background-color: #F5F5F5;
+  padding: 0 10px;
+}
+.result code {
+  background-color: #FFF;
+  font-size: 50px;
+}

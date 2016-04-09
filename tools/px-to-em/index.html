@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Quick PX to EM Converter</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body ng-app="exampleApp">
+    
+    <div class="container" ng-controller="MainCtrl" ng-cloak>
+      
+      <h1 class="page-header text-center">Quick PX to EM Converter</h1>
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <div class="well text-center clearfix">
+            <label for="form-base-font-size">Select Base Font Size</label>
+            <div class="form-fixed-width form-group">
+              <div class="input-group">
+                <input id="form-base-font-size" class="form-control input-lg" type="text" ng-model="baseSize" ng-focus="clearAll()" ng-blur="fillBaseFont()" />
+                <span class="input-group-addon">px</span>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <p class="then-choose text-muted">
+              <span>Then choose</span>
+            </p>
+            <div class="row">
+              <div class="col-sm-6">
+                <label for="form-px-to-em">PX to EM</label>
+                <div class="form-fixed-width form-group">
+                  <div class="input-group">
+                    <input id="form-px-to-em" class="form-control input-lg" type="text" ng-model="pxToEM" ng-focus="emToPX=''"/>
+                    <span class="input-group-addon">px</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <label for="form-em-to-px">EM to PX</label>
+                <div class="form-fixed-width form-group">
+                  <div class="input-group">
+                    <input id="form-em-to-px" class="form-control input-lg" type="text" ng-model="emToPX" ng-focus="pxToEM=''" />
+                    <span class="input-group-addon">em</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--/.row-->
+      <h2 class="text-center result" ng-if="pxToEM && pxToEMResult>0"><code class="text-success">{{pxToEMResult | number}}em</code></h2>
+      <h2 class="text-center result" ng-if="emToPX && emToPXResult>0"><code>{{emToPXResult | number}}px</code></h2>
+      
+    </div><!-- /.container -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-animate.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+
+</html>
