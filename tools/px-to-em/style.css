@@ -27,6 +27,20 @@ body {
   background-color: #F5F5F5;
   padding: 0 10px;
 }
+.result-top {
+  display: block;
+}
+.result-bottom {
+  display: none;
+}
+@media (min-width: 768px) {
+  .result-top {
+    display: none;
+}
+  .result-bottom {
+    display: block;
+  }
+}
 .result code {
   background-color: #FFF;
   font-size: 50px;

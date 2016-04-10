@@ -24,6 +24,10 @@
     <div class="container" ng-controller="MainCtrl" ng-cloak>
       
       <h1 class="page-header text-center">Quick PX to EM Converter</h1>
+      <div class="result-top">
+        <h2 class="text-center result" ng-if="pxToEM && pxToEMResult>0"><code class="text-success">{{pxToEMResult | number}}em</code></h2>
+        <h2 class="text-center result" ng-if="emToPX && emToPXResult>0"><code class="text-success">{{emToPXResult | number}}px</code></h2>
+      </div>
       <div class="row">
         <div class="col-sm-6 col-sm-offset-3">
           <div class="well text-center clearfix">
@@ -61,8 +65,10 @@
           </div>
         </div>
       </div><!--/.row-->
-      <h2 class="text-center result" ng-if="pxToEM && pxToEMResult>0"><code class="text-success">{{pxToEMResult | number}}em</code></h2>
-      <h2 class="text-center result" ng-if="emToPX && emToPXResult>0"><code>{{emToPXResult | number}}px</code></h2>
+      <div class="result-bottom">
+        <h2 class="text-center result" ng-if="pxToEM && pxToEMResult>0"><code class="text-success">{{pxToEMResult | number}}em</code></h2>
+        <h2 class="text-center result" ng-if="emToPX && emToPXResult>0"><code class="text-success">{{emToPXResult | number}}px</code></h2>
+      </div>
       
     </div><!-- /.container -->
     
