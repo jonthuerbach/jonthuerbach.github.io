@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Created by https://www.gitignore.io
 
 ### OSX ###
@@ -48,3 +49,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+=======
+node_modules
+public/js/deps
+>>>>>>> 4df0a4fc01a9e7815d332a4ff379d1834d1e392f
