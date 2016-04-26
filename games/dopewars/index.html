@@ -94,7 +94,7 @@
             <div class="modal-body">
               <p>Select the amount of <strong>{{buyDrugName}}</strong> units you would like to buy.</p>
               <div class="well well-sm">
-                <select class="form-control" ng-model="selectedUnits" ng-options="unit for unit in buyUnits">
+                <select class="form-control" ng-model="buySelectedUnits" ng-options="unit for unit in buyUnits">
                 </select>
               </div>
             </div>
@@ -117,8 +117,7 @@
             <div class="modal-body">
               <p>Select the amount of <strong>{{sellDrugModalTitle}}</strong> units you would like to sell.</p>
               <div class="well well-sm">
-                <select class="form-control" ng-model="drugModalAmountSelected">
-                  <option ng-repeat="amount in sellDrugModalAmount" ng-selected="sellDrugModalAmount">{{amount}}</option>
+                <select class="form-control" ng-model="sellSelectedUnits" ng-options="unit for unit in sellUnits">
                 </select>
               </div>
             </div>

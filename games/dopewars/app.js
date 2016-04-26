@@ -82,30 +82,34 @@ app.controller("MainCtrl", ["$scope",
         var newTotal = item - 1;
         return $scope.buyUnits[newTotal];
       };
-      $scope.selectedUnits = lastItem(maxBuy);
+      $scope.buySelectedUnits = lastItem(maxBuy);
       $scope.buyDrugName = drug.name;
       drugModal.modal();
       $scope.buyDrug = function() {
-        $scope.gameData.player.money -= $scope.selectedUnits * drug.price;
-        drug.units += $scope.selectedUnits;
+        $scope.gameData.player.money -= $scope.buySelectedUnits * drug.price;
+        drug.units += $scope.buySelectedUnits;
         drugModal.modal('hide');
       };
     };
     $scope.sellDrugModal = function($index) {
-      var drug = $scope.gameData.player.drugs;
-      $scope.sellDrugModalAmount = [];
-      $('#sellDrugModal').modal();
-      $scope.sellDrugModalTitle = drug[$index].name;
-      var max = drug[$index].units;
-      for (i = 1; i <= Math.ceil(max); i++) {
-        $scope.sellDrugModalAmount.push(i);
+      var drug = $scope.gameData.player.drugs[$index],
+          maxSell = drug.units,
+          drugModal = $('#sellDrugModal');
+      $scope.sellUnits = [];
+      for (i=1; i <= maxSell; i++) {
+        $scope.sellUnits.push(i);
       }
-      $scope.sellDrugModalAmountSelected = $scope.sellDrugModalAmount.length;
+      var lastItem = function(item) {
+        var newTotal = item - 1;
+        return $scope.sellUnits[newTotal];
+      };
+      $scope.sellSelectedUnits = lastItem(maxSell);
+      $scope.sellDrugName = drug.name;
+      drugModal.modal();
       $scope.sellDrug = function() {
-        var amount = parseInt($scope.sellDrugModalAmountSelected, 10);
-        $scope.gameData.player.money += amount * drug[$index].price;
-        drug[$index].units -= amount;
-        $('#sellDrugModal').modal('hide');
+        $scope.gameData.player.money += drug.units * drug.price;
+        drug.units -= $scope.sellSelectedUnits;
+        drugModal.modal('hide');
       };
     };
     $scope.reload = function() {
