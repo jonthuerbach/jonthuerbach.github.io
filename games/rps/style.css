@@ -1,0 +1,21 @@
+/* Styles go here */
+
+body {
+  /* font-family: 'Raleway', sans-serif; */
+  letter-spacing: -0.03em;
+}
+.display-name {
+  margin-top: 0;
+}
+.display-money {
+  margin-top: 10px;
+}
+.display-location-header {
+  margin-bottom: 20px;
+}
+.display-inventory {
+  margin-bottom: 0;
+}
+.display-inventory > tbody > tr:first-child td {
+  border-top: 0;
+}
