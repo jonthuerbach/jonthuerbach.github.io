@@ -1,6 +1,7 @@
-var app = angular.module("exampleApp", [
+var app = angular.module("DopeWars", [
   'ngAnimate'
 ]);
+
 app.controller("MainCtrl", ["$scope",
   function($scope) {
     $scope.gameData = {
@@ -8,6 +9,7 @@ app.controller("MainCtrl", ["$scope",
         name: 'Jabricon',
         money: 2000,
         inventory: {
+          current: 0,
           max: 100
         },
         drugs: [
@@ -130,10 +132,18 @@ app.controller("MainCtrl", ["$scope",
         var rand = Math.round(Math.random() * 10),
             drugs = $scope.gameData.player.drugs;
         if (rand > 8) {
-          var i = Math.floor(Math.random() * drugs.length);
-          /**/console.log('Sell ' + drugs[i].name);
-          drugs[i].mult = 2 + Math.random();
+          var rand2 = Math.ceil(Math.random() * 2),
+              i = Math.floor(Math.random() * drugs.length);
+          if (rand2 == 1) {
+            drugs[i].mult = 0.5 * Math.random();
+            console.log('buy ' + drugs[i].name);
+          }
+          else {
+            drugs[i].mult = 2 + Math.random();
+            console.log('sell ' + drugs[i].name);
+          }
         }
+        
       };
       $scope.multChance();
       // Refresh prices loop
