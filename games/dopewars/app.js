@@ -10,7 +10,7 @@ app.controller("MainCtrl", ["$scope",
         money: 2000,
         inventory: {
           current: 0,
-          max: 100
+          max: 20
         },
         drugs: [
           {
@@ -74,9 +74,21 @@ app.controller("MainCtrl", ["$scope",
     };
     $scope.buyDrugModal = function($index) {
       var drug = $scope.gameData.player.drugs[$index],
-          maxBuy = Math.floor($scope.gameData.player.money / drug.price),
-          drugModal = $('#buyDrugModal');
+          inventory = $scope.gameData.player.inventory,
+          drugModal = $('#buyDrugModal'),
+          maxBuy = null;
+          // maxBuy = Math.floor($scope.gameData.player.money / drug.price);
+          $scope.maxBuyCheck = function() {
+            if ( Math.floor($scope.gameData.player.money / drug.price) <= (inventory.max - inventory.current)) {
+              maxBuy = Math.floor($scope.gameData.player.money / drug.price);
+            }
+            else {
+              maxBuy = inventory.max - inventory.current;
+            }
+          };
+      $scope.maxBuyCheck();
       $scope.buyUnits = [];
+      
       for (i=1; i <= maxBuy; i++) {
         $scope.buyUnits.push(i);
       }
@@ -90,12 +102,14 @@ app.controller("MainCtrl", ["$scope",
       $scope.buyDrug = function() {
         $scope.gameData.player.money -= $scope.buySelectedUnits * drug.price;
         drug.units += $scope.buySelectedUnits;
+        inventory.current += $scope.buySelectedUnits;
         drugModal.modal('hide');
       };
     };
     $scope.sellDrugModal = function($index) {
       var drug = $scope.gameData.player.drugs[$index],
           maxSell = drug.units,
+          inventory = $scope.gameData.player.inventory,
           drugModal = $('#sellDrugModal');
       $scope.sellUnits = [];
       for (i=1; i <= maxSell; i++) {
@@ -111,9 +125,24 @@ app.controller("MainCtrl", ["$scope",
       $scope.sellDrug = function() {
         $scope.gameData.player.money += drug.units * drug.price;
         drug.units -= $scope.sellSelectedUnits;
+        inventory.current -= $scope.sellSelectedUnits;
         drugModal.modal('hide');
       };
     };
+    $scope.travelModal = function() {
+      $('#travelModal').modal();
+    };
+    function shuffle(array) {
+      var m = array.length, t, i;
+      while (m) {
+        // Pick a remaining element…
+        i = Math.floor(Math.random() * m--);
+        t = array[m];
+        array[m] = array[i];
+        array[i] = t;
+      }
+      return array;
+    }
     $scope.reload = function() {
       $scope.calcPrice = function(price) {
         var min = price * 0.85;
@@ -146,6 +175,7 @@ app.controller("MainCtrl", ["$scope",
         
       };
       $scope.multChance();
+      //shuffle($scope.gameData.player.drugs);
       // Refresh prices loop
       for (i = 0; i < $scope.gameData.player.drugs.length; i++) {
           var drug = $scope.gameData.player.drugs[i];
