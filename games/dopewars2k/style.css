@@ -1,0 +1,69 @@
+body {
+  letter-spacing: -0.03em;
+}
+.pull-right {
+  float: right;
+}
+.text-muted {
+  color: #666;
+}
+.text-right {
+  text-align: right;
+}
+.text-balanced {
+  color: #28a54c;
+}
+.pane, .view, .display-login {
+  background-color: #eee;
+}
+.tab-item.active {
+  background-color: #2d65c4;
+}
+.item-divider-dark {
+  background-color: #444;
+  color: #fff;
+}
+#display-money {
+  font-size: 20px;
+}
+#sell-drug-money,
+#buy-drug-money {
+  font-size: 16px;
+  margin-top: 10px;
+}
+.market-header-right {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  margin-top: -25px;
+  color: #28a54c;
+  text-align: right;
+}
+.display-drug-price-green {
+  float: right;
+  color: #28a54c;
+}
+.display-drug-price-short {
+  float: right;
+  color: #999;
+}
+.display-end-game {
+  position: absolute;
+  background: #eee;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+.display-end-game-money {
+  font-size: 24px;
+}
+.item.item-small {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.select-buy-sell {
+    display: block;
+    width: 100%;
+    height: 34px;
+    background-color: #fff;
+}

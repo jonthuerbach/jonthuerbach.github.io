@@ -1,0 +1,50 @@
+<ion-view title="Buy/Sell">
+        
+  <ion-content class="padding">
+    <div class="list">
+      <div class="item">
+        <div class="row">
+          <div class="col col-50">
+            <button class="button button-block button-positive" ng-click="selectedOption.buy=true" ng-disabled="gameData.money < selectedDrug.price">Buy {{selectedDrug.name}}</button>
+          </div>
+          <div class="col col-50">
+            <button class="button button-block button-balanced" ng-click="selectedOption.buy=false" ng-disabled="selectedDrug.amount===0">Sell {{selectedDrug.name}}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" ng-show="selectedOption.buy===true">
+      <div class="item item-divider item-divider-dark">
+        Buy {{selectedDrug.name}}
+      </div>
+      <div class="item item-text-wrap">
+        Select the amount of <strong>{{selectedDrug.name}}</strong> that you would like to buy. <small class="text-muted">(Max: {{maxBuy}} units)</small>
+      </div>
+      <div class="item">
+        <select class="select-buy-sell" ng-model="buySelectedUnits" ng-options="unit for unit in buyUnits" ng-change="updateSelectedBuyUnits()">
+        </select>
+        <!-- <h3 id="buy-drug-money" class="text-muted text-center">Cost: <strong class="text-balanced">{{buySelectedUnits | currency:undefined:0}}</strong></h3> -->
+        <h3 id="buy-drug-money" class="text-muted text-center">Cost: <strong class="text-balanced">{{buySelectedUnits * selectedDrug.price | currency:undefined:0}}</strong></h3>
+        <button class="button button-block button-positive" ui-sref="market" ng-click="buyDrug(buySelectedUnits)">Buy {{selectedDrug.name}}</button>
+      </div>
+    </div>
+    <div class="card" ng-show="selectedOption.buy===false">
+      <div class="item item-divider item-divider-dark">
+        Sell {{selectedDrug.name}}
+      </div>
+      <div class="item item-text-wrap">
+        Select the amount of <strong>{{selectedDrug.name}}</strong> that you would like to sell. <small class="text-muted">(Max: {{selectedDrug.amount}} units)</small>
+      </div>
+      <div class="item">
+        <select class="select-buy-sell" ng-model="sellSelectedUnits" ng-options="unit for unit in sellUnits">
+        </select>
+        <h3 id="buy-drug-money" class="text-muted text-center">Profit: <strong class="text-balanced">{{calcSellPrice | currency:undefined:0}}</strong></h3>
+        <button class="button button-block button-positive" ui-sref="market" ng-click="sellDrug(sellSelectedUnits)">Sell {{selectedDrug.name}}</button>
+      </div>
+    </div>
+    
+    
+    
+  </ion-content>
+  
+</ion-view>

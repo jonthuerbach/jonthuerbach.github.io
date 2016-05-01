@@ -1,0 +1,33 @@
+<ion-view title="Drug Market">
+  
+  <ion-content class="padding">
+    <div class="list">
+      <div class="item item-small item-avatar">
+        <img src="{{gameData.imageUrl}}" />
+        <h2><a ng-click="auth.$unauth()" href>{{gameData.name}}</a></h2>
+        <p>Day {{gameData.day}}</p>
+        <div class="market-header-right">
+          <h2 id="display-money"><span class="text-muted">Cash:</span> <strong class="text-balanced"> {{gameData.money | currency:undefined:0}}</strong></h2>
+          <p>Bank: <strong class="text-balanced">$0</strong></p>
+        </div>
+      </div>
+    </div>
+    <div class="list">
+      <div class="item item-divider item-divider-dark">
+        <span class="icon ion-ios-location"></span>&nbsp;&nbsp;{{gameData.city}}
+        <span class="pull-right">Inv: {{gameData.inventory.current}} / {{gameData.inventory.max}}</span>
+      </div>
+      <a class="item item-small" ng-repeat="drug in gameData.drugs" ng-click="drugSales($index)" ui-sref="drug-sales">
+        {{drug.name}} <small class="text-muted" ng-show="drug.amount>0">({{gameData.drugs[$index].amount}})</small>
+        <span ng-class="{'display-drug-price-green' : gameData.money >= drug.price,'display-drug-price-short' : gameData.money < drug.price}"><strong>{{drug.price | currency:undefined:0}}</strong></span>
+      </a>
+    </div>
+    <!-- <button class="button button-outline button-positive" ng-click="refreshPrices()">Test Refresh Prices</button> -->
+    <button class="button button-positive" ui-sref="travel"><span class="icon ion-android-plane"></span>&nbsp;Travel</button>
+    <span class="pull-right" ng-if="gameData.city === 'Bronx'"><button class="button button-positive"><span class="icon ion-android-person"></span>&nbsp;Loan Shark</button></span>
+    <span class="pull-right" ng-if="gameData.city === 'Brooklyn'"><button class="button button-positive"><span class="icon ion-ios-cart"></span>&nbsp;Shop</button></span>
+    <span class="pull-right" ng-if="gameData.city === 'Manhattan'"><button class="button button-positive" ui-sref="shop"><span class="icon ion-social-usd"></span>&nbsp;Shop</button></span>
+    <br><br><br><br><br>
+  </ion-content>
+  
+</ion-view>

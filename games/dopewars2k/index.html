@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="dopeWars2K" ng-cloak>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    
+    <title>Dope Wars 2K</title>
+
+    <link href="https://code.ionicframework.com/1.3.0/css/ionic.min.css" rel="stylesheet">
+    <link href="https://raw.githubusercontent.com/theoinglis/ngAnimate.css/master/build/nga.min.css">
+    <link href="style.css" rel="stylesheet">
+
+  </head>
+  <body ng-controller="MainCtrl">
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1751727825059468',
+          xfbml      : true,
+          version    : 'v2.6'
+        });
+      };
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <div ng-hide="authData">
+      <div class="bar bar-header bar-positive">
+        <h1 class="title">DopeWars2K</h1>
+      </div>
+      <ion-content class="padding display-login">
+        <div class="card">
+          <div class="item item-text-wrap">
+            <h2 class="text-center">Welcome to DopeWars2K!</h2>
+            <p class="text-center">You must have a Facebook account to play DopeWars2K</p>
+            <button class="button button-block button-positive" ng-click="login()">
+              <span class="icon-left ion-social-facebook"></span>&nbsp;Login with Facebook
+            </button>
+          </div>
+        </div>
+      </ion-content>
+    </div>
+    <div ng-show="authData">
+      <ion-nav-bar class="bar-positive">
+        <ion-nav-back-button class="button-clear">
+          <i class="ion-chevron-left"></i>&nbsp;Back
+        </ion-nav-back-button>
+      </ion-nav-bar>
+      
+      <ion-nav-view animation="slide-left-right">
+        <!-- Center content -->
+      </ion-nav-view>
+      
+      <div class="tabs tabs-icon-only tabs-positive">
+        <a class="tab-item" ui-sref-active="active" ui-sref="market">
+          <i class="icon ion-arrow-graph-up-right"></i>
+        </a>
+        <a class="tab-item" ui-sref-active="active" ui-sref="travel">
+          <i class="icon ion-android-plane"></i>
+        </a>
+        <!-- <a class="tab-item" ui-sref-active="active" ui-sref="recruit">
+          <i class="icon ion-person-stalker"></i>
+        </a> -->
+        <a class="tab-item" ui-sref-active="active" ui-sref="upgrades">
+          <i class="icon ion-arrow-up-a"></i>
+        </a>
+        <a class="tab-item" ui-sref-active="active" ui-sref="leaderboard">
+          <i class="icon ion-trophy"></i>
+        </a>
+      </div>
+    </div>
+    
+    <div class="display-end-game" ng-show="gameData.day===31">
+      <div class="padding">
+        <div class="list">
+          <div class="item text-center">
+            <h1>Game Over!</h1>
+            <h2>
+              <span class="text-muted">You made</span><br>
+              <span class="text-balanced display-end-game-money">
+                <strong>{{gameData.money | currency:undefined:0}}</strong>
+              </span>
+            </h2>
+          </div>
+          <div class="item text-center">
+            <button class="button button-positive" ng-click="restartGame()"><span class="icon ion-refresh"></span>&nbsp;Post Score and Restart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Load JS Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://code.ionicframework.com/1.3.0/js/ionic.bundle.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

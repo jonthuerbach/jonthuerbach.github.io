@@ -1,0 +1,12 @@
+<ion-view title="Leaderboard">
+  
+  <ion-content class="padding">
+    
+    <div class="list">
+      <div class="item item-divider item-divider-dark">Player Name<span class="pull-right">Money</span></div>
+      <div class="item" ng-repeat="player in leaderboard | orderBy: '-money'">{{player.name}}<span class="pull-right text-balanced"><strong>{{player.money | currency:undefined:0}}</strong></span></div>
+    </div>
+    
+  </ion-content>
+  
+</ion-view>

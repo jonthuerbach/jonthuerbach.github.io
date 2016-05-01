@@ -1,0 +1,15 @@
+<ion-view title="Travel">
+  <ion-content class="padding">
+    
+    <div class="list">
+      <div class="item item-divider item-divider-dark"><span class="icon ion-ios-location"></span>&nbsp;&nbsp;Choose a city</div>
+      <a class="item item-small" ng-repeat="city in travel.cities | filter: city.isCurrent === false" ui-sref="market" ng-click="changeCityName(city)">
+        {{city.name}}
+        <span ng-show="city.home" class="pull-right icon ion-android-person"></span>
+        <span ng-show="city.bank" class="pull-right icon ion-social-usd"></span>
+        <span ng-show="city.shop" class="pull-right icon ion-ios-cart"></span>
+      </a>
+    </div>
+    
+  </ion-content>
+</ion-view>
