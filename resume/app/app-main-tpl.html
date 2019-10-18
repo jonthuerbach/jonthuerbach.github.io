@@ -1,0 +1,67 @@
+<section class="main">
+  <article class="introduction jumbotron text-center">
+    <div class="container">
+      <h1>Jon Thuerbach</h1>
+      <p class="lead text-muted">Software Engineer & UX Designer</p>
+    </div>
+  </article>
+  <section class="resume">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-8 col-lg-9 col-sm-push-4 col-md-push-4 col-lg-push-3">
+          <h3 class="page-header">
+            <span class="fas fa-briefcase"></span>
+            Experience
+          </h3>
+          <article class="job" ng-repeat="job in $ctrl.jobs">
+            <div class="row">
+              <div class="col-xs-4 col-lg-3">
+                <strong>{{job.companyName}}</strong><br/>
+                <small class="text-muted">
+                  {{job.startDate}} - {{job.endDate || 'Present'}}
+                </small><br/>
+                <small class="text-muted">{{job.location}}</small>
+              </div>
+              <div class="col-xs-8 col-lg-9">
+                <strong>{{job.jobTitle}}</strong>
+                <ul>
+                  <li ng-repeat="responsibility in job.responsibilities track by $index">{{responsibility}}</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-3 col-sm-pull-8 col-md-pull-8 col-lg-pull-9">
+          <!-- Skills -->
+          <section class="skills-info">
+            <h3 class="page-header">
+              <span class="fas fa-tools"></span>
+              Skills
+            </h3>
+            <article>
+              <ul class="list-unstyled">
+                <li ng-repeat="skill in $ctrl.skills track by $index">
+                  {{skill.name}}
+                </li>
+              </ul>
+            </article>
+          </section>
+          
+          <!-- Education -->
+          <section class="education-info">
+            <h3 class="page-header">
+              <span class="fas fa-graduation-cap"></span>
+              Education
+            </h3>
+            <article ng-repeat="school in $ctrl.schools track by $index">
+              <strong>{{school.name}}</strong><br/>
+              <span>{{school.unitName}}</span><br/>
+              <small class="text-muted">{{school.location}}</small><br/>
+              <span>{{school.degreeReceived}}, {{school.major}} ({{school.yearGraduated}})</span>
+            </article>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
