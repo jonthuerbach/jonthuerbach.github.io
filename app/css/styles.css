@@ -1,0 +1,36 @@
+[ng-click] {
+  cursor: pointer;
+}
+body {
+  line-height: 1.5em;
+  font-size: 1.2rem;
+}
+ul {
+  padding-left: 20px;
+}
+.job {
+  margin-bottom: 20px;
+}
+.identifier {
+  text-align: center;
+}
+.identifier > img {
+    height: 140px;
+    width: auto;
+  }
+
+@media(min-width: 768px) {
+  body {
+    line-height: 1.5em;
+    font-size: 1.5rem;
+  }
+  .identifier {
+    width: 580px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .identifier > img {
+    float: left;
+    margin-right: 20px;
+  }
+}
