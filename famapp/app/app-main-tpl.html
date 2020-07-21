@@ -1,0 +1,74 @@
+<app-navigation user="$ctrl.user" sign-out="$ctrl.signOut()"></app-navigation>
+
+<section class="main">
+  <div class="container">
+    <div ng-if="!$ctrl.user">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <div class="app-login-panel panel panel-default">
+            <form name="$ctrl.loginForm" ng-submit="$ctrl.signInWithEmailAndPassword($ctrl.email, $ctrl.password)" novalidate>
+              <div class="panel-body">
+                <h2 class="page-header" style="margin-top: 20px;">
+                  <span class="fa fa-user"></span>
+                  Sign In
+                </h2>
+                <div class="form-group" ng-class="{'has-error': $ctrl.loginForm.email.$invalid && $ctrl.loginForm.email.$touched}">
+                  <label for="form-email">Email</label>
+                  <input id="form-email" name="email" class="form-control app-center-input" type="email" ng-model="$ctrl.email" placeholder="name@email.com" required />
+                  <span class="help-block" ng-if="$ctrl.loginForm.email.$invalid && $ctrl.loginForm.email.$touched">
+                    Please enter a valid email address.
+                  </span>
+                </div>
+                <div class="form-group" ng-class="{'has-error': $ctrl.loginForm.password.$invalid && $ctrl.loginForm.password.$touched}">
+                  <label for="form-password">Password</label>
+                  <input id="form-password" name="password" class="form-control app-center-input" type="password" ng-model="$ctrl.password" required />
+                  <span class="help-block" ng-if="!$ctrl.password">
+                    {{$ctrl.passwordErrorMessage}}
+                  </span>
+                </div>
+              </div>
+              <div class="panel-footer">
+                <button class="btn btn-primary btn-block" ng-disabled="$ctrl.loginForm.$invalid">
+                  Sign In
+                  <span class="fa fa-arrow-right"></span>
+                </button>
+              </div>
+            </form>
+          </div>
+          <p class="text-center color-white">Don't have an account? Sucks for you.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section ng-if="$ctrl.user">
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Category</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="(key, value) in $ctrl.items">
+              <td>{{value.name}}</td>
+              <td>{{value.category}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <form class="form-inline">
+      <input class="form-control" type="text" ng-model="$ctrl.itemName" />
+      <input class="form-control" type="text" ng-model="$ctrl.categoryName" />
+      <button class="btn btn-primary" ng-click="$ctrl.addItem($ctrl.itemName, $ctrl.categoryName)">
+        <span class="fa fa-plus"></span>
+        Add Item
+      </button>
+    </form>
+  </div>
+</section>
