@@ -1,20 +1,36 @@
-a,
 [ng-click] {
   cursor: pointer;
 }
-.cursor-help {
-  cursor: help;
-}
 body {
-  background-color: #333;
+  line-height: 1.5em;
+  font-size: 1.2rem;
 }
-.app-login-panel {
-  margin-top: 20px;
+ul {
+  padding-left: 20px;
+}
+.job {
+  margin-bottom: 20px;
+}
+.identifier {
   text-align: center;
 }
-input.app-center-input {
-  text-align: center;
-}
-.color-white {
-  color: #fff;
+.identifier > img {
+    height: 140px;
+    width: auto;
+  }
+
+@media(min-width: 768px) {
+  body {
+    line-height: 1.5em;
+    font-size: 1.5rem;
+  }
+  .identifier {
+    width: 580px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .identifier > img {
+    float: left;
+    margin-right: 20px;
+  }
 }

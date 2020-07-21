@@ -1,74 +1,70 @@
-<app-navigation user="$ctrl.user" sign-out="$ctrl.signOut()"></app-navigation>
-
 <section class="main">
-  <div class="container">
-    <div ng-if="!$ctrl.user">
+  <article class="introduction jumbotron">
+    <div class="container">
+      <section class="identifier clearfix">
+        <img src="http://jonthuerbach.github.io/img/jon-2.png" />
+        <h1>Jon Thuerbach</h1>
+        <p class="lead text-muted">Software Engineer & UX Designer</p>
+      </section>
+    </div>
+  </article>
+  <section class="resume">
+    <div class="container">
       <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
-          <div class="app-login-panel panel panel-default">
-            <form name="$ctrl.loginForm" ng-submit="$ctrl.signInWithEmailAndPassword($ctrl.email, $ctrl.password)" novalidate>
-              <div class="panel-body">
-                <h2 class="page-header" style="margin-top: 20px;">
-                  <span class="fa fa-user"></span>
-                  Sign In
-                </h2>
-                <div class="form-group" ng-class="{'has-error': $ctrl.loginForm.email.$invalid && $ctrl.loginForm.email.$touched}">
-                  <label for="form-email">Email</label>
-                  <input id="form-email" name="email" class="form-control app-center-input" type="email" ng-model="$ctrl.email" placeholder="name@email.com" required />
-                  <span class="help-block" ng-if="$ctrl.loginForm.email.$invalid && $ctrl.loginForm.email.$touched">
-                    Please enter a valid email address.
-                  </span>
-                </div>
-                <div class="form-group" ng-class="{'has-error': $ctrl.loginForm.password.$invalid && $ctrl.loginForm.password.$touched}">
-                  <label for="form-password">Password</label>
-                  <input id="form-password" name="password" class="form-control app-center-input" type="password" ng-model="$ctrl.password" required />
-                  <span class="help-block" ng-if="!$ctrl.password">
-                    {{$ctrl.passwordErrorMessage}}
-                  </span>
-                </div>
+        <div class="col-sm-8 col-md-8 col-lg-9 col-sm-push-4 col-md-push-4 col-lg-push-3">
+          <h3 class="page-header">
+            <span class="fas fa-briefcase"></span>
+            Experience
+          </h3>
+          <article class="job" ng-repeat="job in $ctrl.jobs">
+            <div class="row">
+              <div class="col-xs-4 col-lg-3">
+                <strong>{{job.companyName}}</strong><br/>
+                <small class="text-muted">
+                  {{job.startDate}} - {{job.endDate || 'Present'}}
+                </small><br/>
+                <small class="text-muted">{{job.location}}</small>
               </div>
-              <div class="panel-footer">
-                <button class="btn btn-primary btn-block" ng-disabled="$ctrl.loginForm.$invalid">
-                  Sign In
-                  <span class="fa fa-arrow-right"></span>
-                </button>
+              <div class="col-xs-8 col-lg-9">
+                <strong>{{job.jobTitle}}</strong>
+                <ul>
+                  <li ng-repeat="responsibility in job.responsibilities track by $index">{{responsibility}}</li>
+                </ul>
               </div>
-            </form>
-          </div>
-          <p class="text-center color-white">Don't have an account? Sucks for you.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-3 col-sm-pull-8 col-md-pull-8 col-lg-pull-9">
+          <!-- Skills -->
+          <section class="skills-info">
+            <h3 class="page-header">
+              <span class="fas fa-tools"></span>
+              Skills
+            </h3>
+            <article>
+              <ul class="list-unstyled">
+                <li ng-repeat="skill in $ctrl.skills track by $index">
+                  {{skill.name}}
+                </li>
+              </ul>
+            </article>
+          </section>
+          
+          <!-- Education -->
+          <section class="education-info">
+            <h3 class="page-header">
+              <span class="fas fa-graduation-cap"></span>
+              Education
+            </h3>
+            <article ng-repeat="school in $ctrl.schools track by $index">
+              <strong>{{school.name}}</strong><br/>
+              <span>{{school.unitName}}</span><br/>
+              <small class="text-muted">{{school.location}}</small><br/>
+              <span>{{school.degreeReceived}}, {{school.major}} ({{school.yearGraduated}})</span>
+            </article>
+          </section>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<section ng-if="$ctrl.user">
-  <div class="container">
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Category</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr ng-repeat="(key, value) in $ctrl.items">
-              <td>{{value.name}}</td>
-              <td>{{value.category}}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <form class="form-inline">
-      <input class="form-control" type="text" ng-model="$ctrl.itemName" />
-      <input class="form-control" type="text" ng-model="$ctrl.categoryName" />
-      <button class="btn btn-primary" ng-click="$ctrl.addItem($ctrl.itemName, $ctrl.categoryName)">
-        <span class="fa fa-plus"></span>
-        Add Item
-      </button>
-    </form>
-  </div>
+  </section>
 </section>
