@@ -1,0 +1,15 @@
+/* Add your styles here */
+
+body {
+  background-color: #f5f5f5 !important;
+}
+.cursor-text {
+  cursor: text;
+}
+.test-user-input {
+  font-size: 2rem !important;
+  font-family: serif;
+}
+.test-spent-word {
+  color: #999 !important;
+}
