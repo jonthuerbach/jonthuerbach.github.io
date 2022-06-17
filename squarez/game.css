@@ -1,0 +1,46 @@
+#fa-icon-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#game-options {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.game-square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    height: 50px;
+    min-height: 50px;
+    width: 50px;
+    min-width: 50px;
+    border: 1px solid #ddd;
+}
+.game-player-one {
+    background-color: blue;
+}
+.game-player-two {
+    background-color: red;
+}
+.game-player-one.game-player-two {
+    background-color: purple;
+}
+.game-end-tied-text {
+    color: purple;
+}
+.game-food {
+    color: fuchsia;
+}
+#game-player-one-score,
+#game-end-player-one-score,
+.game-end-player-one-score {
+    color: blue;
+}
+#game-player-two-score,
+#game-end-player-two-score,
+.game-end-player-two-score {
+    color: red;
+}
